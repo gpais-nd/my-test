@@ -1,0 +1,159 @@
+{
+  "data": {
+    "searchNodes": [
+      {
+        "edgeId": "4deb40e8cdf9db2e26d9feafcb1307ad",
+        "node": {
+          "_id": "urn:oms:dataflow:(urn:oms:platform:airflow:airflow.disneystreaming.com):ds_glimpse_page_dim_load",
+          "name": "ds_glimpse_page_dim_load",
+          "desc": "https://airflow.disneystreaming.com/dags/ds_glimpse_page_dim_load/grid",
+          "__typename": "Dataflow"
+        },
+        "relationship": "produces",
+        "relatedNode": {
+          "_id": "urn:oms:dataset:(urn:oms:platform:glue:141988508569):prodtech_glimpse_ds_prod.glimpse_page_dim",
+          "name": "glimpse_page_dim",
+          "desc": null,
+          "__typename": "Dataset"
+        },
+        "__typename": "NodeLineage"
+      },
+      {
+        "edgeId": "11949d27d72b1e3d3e9a577fa390b59a",
+        "node": {
+          "_id": "urn:oms:dataflow:(urn:oms:platform:airflow:airflow.disneystreaming.com):ds_glimpse_page_dim_load",
+          "name": "ds_glimpse_page_dim_load",
+          "desc": "https://airflow.disneystreaming.com/dags/ds_glimpse_page_dim_load/grid",
+          "__typename": "Dataflow"
+        },
+        "relationship": "produces",
+        "relatedNode": {
+          "_id": "urn:oms:dataset:(urn:oms:platform:glue:141988508569):prodtech_glimpse_ds_prod.glimpse_page_navigation_metadata_ref",
+          "name": "glimpse_page_navigation_metadata_ref",
+          "desc": null,
+          "__typename": "Dataset"
+        },
+        "__typename": "NodeLineage"
+      },
+      {
+        "edgeId": "1de1bbc9ef159ea92174661a90815965",
+        "node": {
+          "_id": "urn:oms:dataflow:(urn:oms:platform:airflow:airflow.disneystreaming.com):ds_glimpse_page_dim_load",
+          "name": "ds_glimpse_page_dim_load",
+          "desc": "https://airflow.disneystreaming.com/dags/ds_glimpse_page_dim_load/grid",
+          "__typename": "Dataflow"
+        },
+        "relationship": "produces",
+        "relatedNode": {
+          "_id": "urn:oms:dataset:(urn:oms:platform:snowflake:disneystreaming.us-east-1.snowflakecomputing.com):dss_prod.data_architecture.glimpsev2_dim_page",
+          "name": "glimpsev2_dim_page",
+          "desc": "dss_prod.data_architecture.glimpsev2_dim_page",
+          "__typename": "Dataset"
+        },
+        "__typename": "NodeLineage"
+      },
+      {
+        "edgeId": "312dfe8cae471c011e12446ee8068250",
+        "node": {
+          "_id": "urn:oms:dataflow:(urn:oms:platform:airflow:airflow.disneystreaming.com):ds_glimpse_page_dim_load",
+          "name": "ds_glimpse_page_dim_load",
+          "desc": "https://airflow.disneystreaming.com/dags/ds_glimpse_page_dim_load/grid",
+          "__typename": "Dataflow"
+        },
+        "relationship": "produces",
+        "relatedNode": {
+          "_id": "urn:oms:dataset:(urn:oms:platform:snowflake:disneystreaming.us-east-1.snowflakecomputing.com):dss_prod.data_architecture.glimpsev2_page_navigation_metadata",
+          "name": "glimpsev2_page_navigation_metadata",
+          "desc": "dss_prod.data_architecture.glimpsev2_page_navigation_metadata",
+          "__typename": "Dataset"
+        },
+        "__typename": "NodeLineage"
+      },
+      {
+        "edgeId": "e73523731b3d50e42e8da93a0f437e93",
+        "node": {
+          "_id": "urn:oms:dataflow:(urn:oms:platform:airflow:airflow.disneystreaming.com):ds_glimpse_page_dim_load",
+          "name": "ds_glimpse_page_dim_load",
+          "desc": "https://airflow.disneystreaming.com/dags/ds_glimpse_page_dim_load/grid",
+          "__typename": "Dataflow"
+        },
+        "relationship": "produces",
+        "relatedNode": {
+          "_id": "urn:oms:dataset:(urn:oms:platform:snowflake:disneystreaming.us-east-1.snowflakecomputing.com):dss_prod.disney_plus.airflow_dag_complete_log",
+          "name": "airflow_dag_complete_log",
+          "desc": "dss_prod.disney_plus.airflow_dag_complete_log",
+          "__typename": "Dataset"
+        },
+        "__typename": "NodeLineage"
+      },
+      {
+        "edgeId": "c95a662a38dd9d412e8153366126829d",
+        "node": {
+          "_id": "urn:oms:dataflow:(urn:oms:platform:airflow:airflow.disneystreaming.com):ds_glimpse_page_dim_load",
+          "name": "ds_glimpse_page_dim_load",
+          "desc": "https://airflow.disneystreaming.com/dags/ds_glimpse_page_dim_load/grid",
+          "__typename": "Dataflow"
+        },
+        "relationship": "produces",
+        "relatedNode": {
+          "_id": "urn:oms:dataset:(urn:oms:platform:snowflake:disneystreaming.us-east-1.snowflakecomputing.com):prodtech_ds_pro.build.glimpse_page_dim",
+          "name": "GLIMPSE_PAGE_DIM",
+          "desc": null,
+          "__typename": "Dataset"
+        },
+        "__typename": "NodeLineage"
+      },
+      {
+        "edgeId": "07d2b906f035e23c4fc21a80553b4a72",
+        "node": {
+          "_id": "urn:oms:dataflow:(urn:oms:platform:airflow:airflow.disneystreaming.com):ds_glimpse_page_dim_load",
+          "name": "ds_glimpse_page_dim_load",
+          "desc": "https://airflow.disneystreaming.com/dags/ds_glimpse_page_dim_load/grid",
+          "__typename": "Dataflow"
+        },
+        "relationship": "produces",
+        "relatedNode": {
+          "_id": "urn:oms:dataset:(urn:oms:platform:snowflake:disneystreaming.us-east-1.snowflakecomputing.com):prodtech_ds_pro.build.glimpse_page_navigation_metadata_ref",
+          "name": "GLIMPSE_PAGE_NAVIGATION_METADATA_REF",
+          "desc": null,
+          "__typename": "Dataset"
+        },
+        "__typename": "NodeLineage"
+      },
+      {
+        "edgeId": "abf07d143891336d2537b67ed25226a8",
+        "node": {
+          "_id": "urn:oms:dataflow:(urn:oms:platform:airflow:airflow.disneystreaming.com):ds_glimpse_page_dim_load",
+          "name": "ds_glimpse_page_dim_load",
+          "desc": "https://airflow.disneystreaming.com/dags/ds_glimpse_page_dim_load/grid",
+          "__typename": "Dataflow"
+        },
+        "relationship": "triggers",
+        "relatedNode": {
+          "_id": "urn:oms:dataflow:(urn:oms:platform:databricks:dss-dsa-prod-us-east-1.cloud.databricks.com):279498278182183",
+          "name": "ptd_dq_glimpse - Prod",
+          "desc": "https://dss-dsa-prod-us-east-1.cloud.databricks.com/jobs/279498278182183=?o3066777196544896",
+          "__typename": "Dataflow"
+        },
+        "__typename": "NodeLineage"
+      },
+      {
+        "edgeId": "88e52b00b331498582547658e67af91a",
+        "node": {
+          "_id": "urn:oms:dataflow:(urn:oms:platform:airflow:airflow.disneystreaming.com):ds_glimpse_page_dim_load",
+          "name": "ds_glimpse_page_dim_load",
+          "desc": "https://airflow.disneystreaming.com/dags/ds_glimpse_page_dim_load/grid",
+          "__typename": "Dataflow"
+        },
+        "relationship": "triggers",
+        "relatedNode": {
+          "_id": "urn:oms:dataflow:(urn:oms:platform:databricks:dss-dsa-prod-us-east-1.cloud.databricks.com):616745367860271",
+          "name": "ptd_glimpse_page_dim_load - Prod",
+          "desc": "https://dss-dsa-prod-us-east-1.cloud.databricks.com/jobs/616745367860271=?o3066777196544896",
+          "__typename": "Dataflow"
+        },
+        "__typename": "NodeLineage"
+      }
+    ]
+  }
+}

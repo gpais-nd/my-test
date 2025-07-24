@@ -1,0 +1,53 @@
+.partitionColumns {
+  margin: 1rem 1rem 3rem 1rem;
+
+  .title {
+    color: var(--brown-50);
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .query {
+    display: flex;
+    padding: 1rem;
+
+    .code {
+      font-family: "Roboto Mono", Courier, monospace;
+    }
+
+    .reservedWord {
+      color: #d73a49;
+    }
+  
+    .operator {
+      color: #005cc5;
+    }
+  
+    .copyButton {
+      border-radius: 0.5rem;
+      margin-left: 1rem;
+      margin-top: -0.2rem;
+
+      & :hover {
+        background: #dddddd;
+      }
+    }
+  }
+
+  .tableContainer {
+    padding-left: 1rem;
+
+    th {
+      color: var(--brown-50);
+      font-weight: 500;
+      padding-right: 1rem;
+      text-align: left;
+    }
+
+    td {
+      padding-right: 1rem;
+      vertical-align: top;
+    }
+  }
+}

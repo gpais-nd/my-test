@@ -1,0 +1,20 @@
+.cellEllipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cellDescription {
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+.cellVerticalColumn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}

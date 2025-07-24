@@ -1,0 +1,8 @@
+env_short: dev
+kms:
+    kms_arn: arn:aws:kms:us-east-1:231874138027:key/c73c089e-812e-4241-bc5a-ef7de456f70d
+dns_domain_id:
+    name: "dev.oms.disn.io"
+    san: "*.dev.oms.disn.io"
+# acm:
+#     arn: arn:aws:acm:us-east-1:716915692812:certificate/654b4099-19f5-42b5-8b5a-7e7493c4846c # update with dev 

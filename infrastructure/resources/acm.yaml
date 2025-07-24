@@ -1,0 +1,13 @@
+Resources:
+  AcmCertificate:
+    Type: AWS::CertificateManager::Certificate
+    Properties:
+      DomainName: ${self:custom.env.dns_domain_id.name}
+      SubjectAlternativeNames:
+        - ${self:custom.env.dns_domain_id.san}
+      ValidationMethod: DNS
+      Tags:
+        - Key: Application
+          Value: oms-acm
+        - Key: environment
+          Value: ${self:custom.env.env_short}

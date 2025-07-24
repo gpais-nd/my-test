@@ -1,0 +1,72 @@
+.loader {
+  position: absolute;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  .container {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .spinner {
+    animation-duration: 1.5s;
+    height: 8rem;
+    margin-top: 1rem;
+    width: 8rem;
+  }
+
+  .spinnerDual {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+
+  .spinnerDual:after {
+    content: " ";
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    margin-top: 1.5rem;
+    border-radius: 50%;
+    border: 6px solid #222;
+    border-color: #222 transparent #222 transparent;
+    animation: spinnerDual 0.7s linear infinite;
+  }
+
+  @keyframes spinnerDual {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .small {
+    height: 5rem;
+    width: 5rem;
+  }
+  
+  .large {
+    height: 10rem;
+    width: 10rem;
+  }
+  
+  .slow {
+    animation-duration: 2.5s;
+  }
+  
+  .fast {
+    animation-duration: 0.5s;
+  }
+  
+  .text {
+    text-align: center;
+    width: 100%;
+  }
+}

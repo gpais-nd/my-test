@@ -1,0 +1,50 @@
+service: ${self:custom.var.prefix}-${self:custom.var.app}-ui-infra
+frameworkVersion: "3"
+configValidationMode: warn
+useDotenv: true
+
+provider:
+  name: aws
+  stage: ${opt:stage, 'sandbox'}
+  region: ${self:custom.var.region}
+  stackName: ${self:custom.var.prefix}-${self:custom.var.app}-ui-infra-${self:custom.env.env_short}
+  stackTags: ${self:custom.var.stack_tags}
+  deploymentMethod: direct
+  deploymentBucket:
+    name: ${self:custom.var.prefix}-${self:custom.var.app}-serverless-ui-infrastructure-${self:custom.env.env_short}
+    serverSideEncryption: AES256
+
+custom:
+  var: ${file(config/shared.yaml)}
+  env: ${file(config/${opt:stage}.yaml)}
+  prefix: analytics
+  s3Sync:
+    - bucketName: ${self:custom.var.prefix}-${self:custom.var.region_sf}-${self:custom.var.domain_sf}-${self:custom.var.app}-frontend-${self:custom.env.env_short}
+      localDir: ../apps/mui-ui/build
+  deploymentBucket:
+    versioning: true
+    tags:
+      - Key: data_classification
+        Value: internal-use
+      - Key: data_sensitivity
+        Value: metadata
+      - Key: productName
+        Value: oms
+      - Key: squadName
+        Value: grogu
+      - Key: disney_owner_email
+        Value: DMED.DPGrogu@disney.com
+      - Key: TerminateExceptionFlag
+        Value: "true"
+      - Key: vcs_repo
+        Value: https://github.bamtech.co/data-platform/metadata-mart-infra.git
+plugins:
+  - serverless-deployment-bucket
+  - serverless-plugin-resource-tagging
+  - serverless-s3-sync
+
+resources:
+  - ${file(./resources/s3-bucket.yaml)}
+  - ${file(./resources/cloudfront.yaml)}
+  - ${file(./resources/acm.yaml)}
+  - ${file(./resources/cloudwatch.yaml)}

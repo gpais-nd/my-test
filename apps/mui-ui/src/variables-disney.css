@@ -1,0 +1,85 @@
+:root {
+  --padding: 1rem;
+  --paddingSmall: 0.8rem;
+  --fontSize: 16px;
+
+  --fontColor: #000;
+  --fontColorSecondary: #6b7790;
+  --fontColorWellSecondary: #5e6573;
+  --fontColorInactive: #9e9fa3;
+  --fontColorButtonInactive: #c5c9d5;
+  --fontColorInverted: #fff;
+  --fontColorDarkGrey: #262930;
+  --fontColorLightGrey: #292c33;
+  --fontColorFooter: #292c33;
+  --fontHover: #3772df;
+  --fontMenuActive: #1890ff;
+
+  --background: #fffdfd;
+  --backgroundSecondary: #f6f7f9;
+  --backgroundInactive: #edeff2;
+  --backgroundInverted: #000;
+  --backgroundFooter: #0a0a2b;
+  --backgroundFooterDmed: #f6f7f9;
+  --backgroundDisabledBtn: #f0f2f4;
+  --backgroundRightBar: #f6f7f8;
+  --backgroundMenuItemActive: #ebf1fc;
+  --backgroundCommentProfileIcon: #0d6ad6;
+
+  --colorPrimary: #008bcc;
+  --colorJourney: #0a0a2b;
+  --colorJourneySeparator: #1e1e45;
+  --colorInfo: #2a6ef4;
+  --colorWarning: #f8bd60;
+  --colorAlertSoft: #fdbfc9;
+  --colorAlertMedium: #e14f65;
+  --colorAlert: #de224a;
+  --colorAlertDark: #a20d30;
+  --colorSecondary: #dcdfe6;
+  --colorSuccess: #6ce38d;
+  --colorSuccessDark: #5aac72;
+
+  --colorAdSalesDomain: #80c5e5;
+  --colorContentDomain: #c2e3f2;
+  --colorEngagementDomain: #e5e5f1;
+  --colorEnterpriseDomain: #d3d2f3;
+  --colorSubscribersDomain: #f2e9f7;
+  --colorProductAndTechDomain: #bcb1d6;
+  --colorDefaultDomain: #dcdfe6;
+
+  --gold: #faab11;
+
+  --borderColor: #dcdfe6;
+  --borderColor2: #b8becc;
+  --borderColor3: #edeff2;
+
+  --boxShadow: rgba(0, 0, 0, 0.1) 0px 8px 15px;
+  --boxShadowSecondary: rgba(0, 0, 0, 0.08) 0px 3px 4px 2px;
+
+  --inputBackground: #f7f8fa;
+  --rowBackground: #e3f3f9;
+  --tabHover: #1a1a1a;
+  --pillSelected: #dcdfe6;
+  --pillHover: #edeff2;
+
+  --zIndexNavigationBar: 9;
+  --zIndexNavigationDropdownMenu: -1;
+  --zIndexDropdownMenu: 1;
+
+  --lightGray: #eee;
+  --gray: #ccc;
+  --gray3: #cdcfd3;
+  --gray5: #a4a5ab;
+
+  --activeBackground: #03618d;
+
+  --disneyBlue: #3772df;
+  --disneyBlueLight: #ebf1fc;
+  --blue3: #a2c5f3;
+
+  --error: #da1b4b;
+
+  --light-theme-neutral-text-weak: #8C8C8C;
+  --light-theme-neutral-border-weak: #BBB;
+  --light-theme-neutral-background-inverted: #FFF;
+}

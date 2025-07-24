@@ -1,0 +1,123 @@
+{
+  "data": {
+    "getDataSources": [
+      {
+        "id": "d731ca20-423d-4d7a-86f6-a3117ab03df1",
+        "name": "Snowflake",
+        "dataSourceLabel": "Snowflake",
+        "label": "Tables",
+        "numberOfTables": 0,
+        "category": "table",
+        "isEnabled": true
+      },
+      {
+        "id": "d731ca21-423d-4d7a-86f6-a3117ab03df2",
+        "name": "DeltaLake",
+        "dataSourceLabel": "DeltaLake",
+        "label": "Tables",
+        "numberOfTables": 0,
+        "category": "table",
+        "isEnabled": true
+      },
+      {
+        "id": "d731ca22-423d-4d7a-86f6-a3117ab03df3",
+        "name": "Hive",
+        "label": "Tables",
+        "dataSourceLabel": "Hive",
+        "numberOfTables": 0,
+        "category": "table",
+        "isEnabled": true
+      },
+      {
+        "id": "d731ca22-423d-4d7a-86f6-a3117ab03df4",
+        "name": "LookerDataset",
+        "label": "Tables",
+        "dataSourceLabel": "Looker Datasets",
+        "numberOfTables": 0,
+        "category": "table",
+        "isEnabled": true
+      },
+      {
+        "id": "d731ca22-423d-4d7a-86f6-a3117ab03df5",
+        "name": "LookerDashboard",
+        "label": "Dashboards",
+        "dataSourceLabel": "Looker Dashboard",
+        "numberOfTables": 0,
+        "category": "reports",
+        "isEnabled": true
+      },
+      {
+        "id": "d731ca22-423d-4d7a-86f6-a3117ab03df6",
+        "name": "LookerWidgets",
+        "label": "Widgets",
+        "dataSourceLabel": "Looker Widgets",
+        "numberOfTables": 0,
+        "category": "reports",
+        "isEnabled": true
+      },
+      {
+        "id": "d731ca23-423d-4d7a-86f6-a3117ab03df7",
+        "name": "Harmony",
+        "label": "Pipelines",
+        "dataSourceLabel": "Harmony",
+        "numberOfTables": 0,
+        "category": "job",
+        "isEnabled": true
+      },
+      {
+        "id": "d731ca24-423d-4d7a-86f6-a3117ab03df8",
+        "name": "Airflow",
+        "label": "Pipelines",
+        "numberOfTables": 0,
+        "dataSourceLabel": "Airflow",
+        "category": "job",
+        "isEnabled": true
+      },
+      {
+        "id": "d731ca24-423d-4d7a-86f6-a3117ab03df9",
+        "name": "Kinesis",
+        "label": "Streams",
+        "dataSourceLabel": "Kinesis",
+        "numberOfTables": 0,
+        "category": "stream",
+        "isEnabled": true
+      },
+      {
+        "id": "d731ca24-423d-4d7a-86f6-a3117ab03df0",
+        "name": "UnityCatalog",
+        "label": "Tables",
+        "dataSourceLabel": "Unity Catalog",
+        "numberOfTables": 0,
+        "category": "table",
+        "isEnabled": true
+      },
+      {
+        "id": "d731ca22-423d-4d7a-86f6-a3117ab03de1",
+        "name": "TableauDataset",
+        "label": "Tables",
+        "dataSourceLabel": "Tableau Datasets",
+        "numberOfTables": 0,
+        "category": "table",
+        "isEnabled": false
+      },
+      {
+        "id": "d731ca22-423d-4d7a-86f6-a3117ab03de3",
+        "name": "TableauDashboard",
+        "label": "Dashboards",
+        "dataSourceLabel": "Tableau Dashboard",
+        "numberOfTables": 0,
+        "category": "reports",
+        "isEnabled": true
+      },
+      {
+        "id": "d731ca22-423d-4d7a-86f6-a3117ab03de2",
+        "name": "TableauWidgets",
+        "label": "Widgets",
+        "dataSourceLabel": "Tableau Widgets",
+        "numberOfTables": 0,
+        "category": "reports",
+        "isEnabled": true
+      }
+    ]
+  }
+}

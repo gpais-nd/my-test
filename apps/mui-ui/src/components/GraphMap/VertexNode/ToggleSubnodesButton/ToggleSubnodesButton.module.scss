@@ -1,0 +1,67 @@
+.toggleSubnodesButton {
+  .container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    width: 0.875rem;
+  }
+
+  .floatLeft{
+    left: 0;
+  }
+  
+  .floatRight {
+    right: 0;
+  }
+
+  .button {
+    border-radius: 50%;
+    height: 0.875rem;
+    min-width: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 0.875rem;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  .loaderContainer {
+    background: #71afc0;
+    border-radius: 50%;
+    height: 12px;
+    margin: 2px;
+    padding: 0;
+    width: 12px;
+
+    .loader {
+      animation: rotation 1s linear infinite;
+      border: 1px solid #FFF;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      box-sizing: border-box;
+      display: block;
+      height: 8px;
+      margin: 2px;
+      width: 8px;
+    }
+  
+    @keyframes rotation {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+    } 
+  }
+}
+
+
+.tooltip {
+  font-size: 1rem;
+  width: auto;
+}

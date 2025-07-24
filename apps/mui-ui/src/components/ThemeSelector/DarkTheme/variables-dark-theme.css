@@ -1,0 +1,36 @@
+:root {
+  --backgroundMain1: #060f2f;
+  --backGroundMain2: #1b2240;
+  --backGroundMain3: #060f2f;
+  --textColorMain1: white;
+  --buttonTextColorMain1: white;
+  --borderLighter1: white;
+  --neutral-grey-1: #272c35;
+  --neutral-grey-2: #646f85;
+  --neutral-grey-3: #b9bfcb;
+  --neutral-grey-4: #dde0e6;
+  --neutral-faux-black: #040405;
+  --neutral-5: #0b0c0f;
+  --neutral-18: #282c34;
+  --neutral-40: #586174;
+  --neutral-50: #6e7a91;
+  --neutral-70: #a8afbd;
+  --neutral-92: #e8eaed;
+  --neutral-97: #f7f7f9;
+  --blue-50: #1a71e5;
+  --blue-60: #478eeb;
+  --blue-90: #d1e3fa;
+  --blue-95: #e8f1fc;
+  --purple-50: #9b1ae5;
+  --purple-95: #f5e8fc;
+  --red-40: #b8143e;
+  --red-50: #e51a4c;
+  --red-95: #fce8ed;
+  --green-base: #068569;
+  --green-6: #eaf8f5;
+  --green-30: #0f8a4c;
+  --yellow-base: #faac11;
+  --yellow-6: #fff7e7;
+  --yellow-30: #fcd17c;
+  --mui-main: #3f51b5;
+}

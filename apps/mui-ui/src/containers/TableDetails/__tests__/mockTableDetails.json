@@ -1,0 +1,99 @@
+{
+  "data": {
+    "getAssetMetadata": {
+      "dataSource": "DeltaLake",
+      "businessMetadata": {
+        "asset_id": "c731ca20-423d-4d7a-86f6-a3117ab03dff",
+        "asset_name": "sample_delta_table",
+        "classification": null,
+        "administrativeMetadata": {
+          "team": null
+        },
+        "descriptiveMetadata": {
+          "description": null
+        },
+        "owner": null
+      },
+      "sourceSpecificMetadata": {
+        "DeltaLake": {
+          "location": null,
+          "partition": [],
+          "table_id": null,
+          "columns": [
+            {
+              "columnName": "product_id",
+              "comment": null,
+              "dataType": "StringType()",
+              "default_value": null,
+              "nullable": true
+            },
+            {
+              "columnName": "product_name",
+              "comment": null,
+              "dataType": "StringType()",
+              "default_value": null,
+              "nullable": true
+            },
+            {
+              "columnName": "price",
+              "comment": null,
+              "dataType": "LongType()",
+              "default_value": null,
+              "nullable": true
+            },
+            {
+              "columnName": "CURRENCY",
+              "comment": null,
+              "dataType": "StringType()",
+              "default_value": null,
+              "nullable": true
+            },
+            {
+              "columnName": "category",
+              "comment": null,
+              "dataType": "StringType()",
+              "default_value": null,
+              "nullable": true
+            },
+            {
+              "columnName": "updated_at",
+              "comment": null,
+              "dataType": "DoubleType()",
+              "default_value": null,
+              "nullable": true
+            }
+          ]
+        }
+      },
+      "technicalMetadata": {
+        "asset_age": 469,
+        "asset_status": null,
+        "asset_type": "table",
+        "created_by": null,
+        "created_time": "2022-05-25T12:36:23.292000",
+        "env": "Sandbox",
+        "operationalMetadata": {
+          "active_bytes": null,
+          "est_monthly_cost": null,
+          "source_control_url": null,
+          "table_size": "12794"
+        },
+        "securityAndComplianceMetadata": {
+          "data_sensitivity": null
+        },
+        "usageMetadata": {
+          "last_accessed": "2023-07-19T00:04:14",
+          "last_accessed_age": 49,
+          "top_queries": [
+            "Deleted rows where [\"(spark_catalog.delta_sql.products.`product_name` = 'Pen')\"]",
+            "Rows were updated.",
+            "Added a new column named 'CURRENCY'",
+            "Rows were updated.",
+            "Data was written to the table.",
+            "Data was written to the table."
+          ]
+        }
+      }
+    }
+  }
+}

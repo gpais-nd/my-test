@@ -1,0 +1,207 @@
+.grid {
+  background: var(--grey-page-white, #fff);
+  border-radius: 1.25rem;
+  width: 100%;
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+
+    thead {
+      background: #ffffff;
+
+      tr:first-child {
+        height: 4.44rem;
+      }
+
+      tr:last-child {
+        border-bottom: 0.03125rem solid #10253f;
+      }
+
+      th {
+        background: #ffffff;
+        color: var(--brown-50);
+        font-weight: 600;
+        line-height: 1.5rem;
+
+        .headerTitle {
+          align-items: center;
+          display: flex;
+          text-align: left;
+          user-select: none;
+        }
+
+        .sortable {
+          cursor: pointer;
+        }
+
+        .sortIcon {
+          height: 1.5rem;
+          margin-left: 0.5rem;
+          width: 1.5rem;
+        }
+
+        .filterIcon {
+          cursor: pointer;
+          height: 1rem;
+          margin-left: 0.5rem;
+
+          svg {
+            fill: var(--brown-50);
+            height: 1.2rem;
+          }
+        }
+      }
+
+      th:first-child {
+        padding-left: 2rem;
+      }
+
+      .collapsibleHeader {
+        width: 5rem;
+      }
+
+      .filterHeader {
+        padding-right: 0.5rem;
+      }
+
+      .filterWrapper {
+        padding-right: 0.5rem;
+        padding-bottom: 1rem;
+
+        .filter {
+          width: 100%;
+        }
+      }
+
+      tr:nth-child(2) {
+        height: 1.44rem;
+      }
+
+      tr.trNoFilters {
+        height: 0.1rem;
+      }
+
+      tr.NoBorderTrNoFilters {
+        height: 0;
+      }
+
+      .filtersHeaderRow {
+        .inputField {
+          height: 2.3rem;
+          border-radius: 0.2rem;
+          width: 100%;
+
+          div {
+            padding-right: 0.2rem;
+          }
+
+          input {
+            padding: 7.2px 14px;
+          }
+        }
+
+        .selectField {
+          font-weight: 400;
+          height: 2rem;
+          min-height: 2rem;
+          padding: 0 0.5rem;
+
+          div {
+            padding: 0;
+          }
+        }
+
+        .clearFiltersButton {
+          position: absolute;
+          right: 0.5rem;
+        }
+      }
+
+      .borderLine {
+        background: #dddddd;
+        height: 1px;
+      }
+
+      .noBorderLine {
+        height: 0;
+      }
+    }
+
+    tbody {
+      tr {
+        height: 2.3125rem;
+
+        td {
+          background: inherit;
+          padding-right: 0.79rem;
+          overflow-wrap: break-word;
+        }
+
+        .collapsible {
+          text-overflow: initial;
+        }
+
+        td:first-child {
+          padding-left: 2rem;
+        }
+
+        td:last-child {
+          padding-right: 2rem;
+        }
+      }
+
+      tr:nth-child(odd) {
+        background: #fff9f8;
+      }
+
+      tr:nth-child(even) {
+        background: #ffffff;
+      }
+    }
+  }
+
+  .footer {
+    border-top: 0.03125rem solid #10253f;
+    height: 6.25rem;
+    padding: 2.75rem 1.62rem 0 1.62rem;
+  }
+
+  .gridPillLink {
+    border-radius: 6.25rem;
+
+    .pill {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      line-height: 1.125rem;
+      margin-top: 0.5rem;
+      padding: 0.25rem 1.125rem;
+      text-decoration: underline;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+
+    .primary {
+      background: var(--pill-link-primary);
+      border-radius: inherit;
+    }
+
+    .secondary {
+      background: var(--pill-link-secondary);
+      border-radius: inherit;
+    }
+
+    .tertiary {
+      background: var(--pill-link-tertiary);
+      border-radius: inherit;
+    }
+  }
+}

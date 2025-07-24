@@ -1,0 +1,41 @@
+version: v0.1
+# test:
+#   - type: compose
+#     name: Run Unit Tests
+#     file: docker-compose.test.yml
+#     branch: mcm-docker-compose-refactor
+#     args: --build --exit-code-from tester
+build:
+  - parallel:
+      groupName: "Build Group"
+      steps:
+        - type: docker
+          dockerfile: Dockerfile-develop
+          branch: develop|(mui)-.*|(MUI)-.*
+          name: Develop Image
+          imageName: mui-develop
+          useArtifactory: true
+        - type: docker
+          dockerfile: Dockerfile-staging
+          branch: main
+          name: Staging Image
+          imageName: mui-staging
+          useArtifactory: true
+        - type: docker
+          dockerfile: Dockerfile-production
+          branch: main
+          name: Production Image
+          imageName: mui-production
+          useArtifactory: true
+# notify:
+#   - type: slack
+#     event: success
+#     branch: main|develop
+#     message: "Tests & Build for branch *${BRANCH_NAME}* <${BUILD_URL}|#${BUILD_NUMBER}> completed successfully"
+#     channels:
+#       - data-dx-tech
+#   - type: slack
+#     event: fail
+#     message: "Tests & Build for branch *${BRANCH_NAME}* <${BUILD_URL}|#${BUILD_NUMBER}> has failed"
+#     channels:
+#       - data-dx-tech

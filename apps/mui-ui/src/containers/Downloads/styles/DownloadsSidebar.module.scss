@@ -1,0 +1,151 @@
+.sidebar {
+  width: 25vw;
+  position: absolute;
+  right: 0;
+  background-color: #fff9f8;
+  border-left: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 85vh;
+
+  .sidebarTitle {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #b4522e;
+  }
+
+  .requestButton {
+    display: block;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    margin-bottom: 1rem;
+    padding: 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-transform: none;
+    color: black;
+    font-weight: 400;
+
+    &:hover {
+      border: 1px solid #b4522e;
+    }
+  }
+}
+
+.latestRequestsTitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: left;
+  color: #b4522e;
+}
+
+.divider {
+  margin: 1rem;
+}
+
+.listItem {
+  background-color: #fffdfd;
+}
+
+.requestContainer {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 0.5rem;
+}
+
+.requestDetails {
+  flex: 1;
+}
+
+.requestName {
+  max-width: 11vw;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0.5rem;
+}
+
+.requestStatus {
+  border-radius: 1.5rem;
+  color: black;
+  font-size: 0.8rem;
+  margin: 0.5rem;
+  padding: 0.25rem;
+  text-align: center;
+  width: fit-content;
+}
+
+.posted {
+  background-color: #bedbff;
+}
+
+.in_progress {
+  background-color: #fff9c6;
+}
+
+.consolidating {
+  background-color: #ffe7d3;
+}
+
+.completed {
+  background-color: #b4ec9e;
+}
+
+.failed {
+  background-color: #ffc2a6;
+}
+
+.requestMeta {
+  flex: 2;
+  justify-items: end;
+}
+
+.requestIcon {
+  display: inline-flex;
+  padding: 0.5rem;
+}
+
+.requestDate {
+  padding: 0.5rem;
+  color: grey;
+  text-align: right;
+}
+
+.noRequestsText {
+  font-weight: 420;
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.noRequestsDetails {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: black;
+}
+
+.goToRequestsButton {
+  background-color: #b4522e;
+  border-radius: 6.25rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 800;
+  width: fit-content;
+  align-self: center;
+  margin-top: 24px;
+
+  &:hover {
+    background-color: #d1653e;
+  }
+}

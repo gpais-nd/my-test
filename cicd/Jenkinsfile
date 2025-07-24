@@ -1,0 +1,149 @@
+#!/usr/bin/env groovy
+
+choice = []
+pipeline {
+    agent {
+        docker { image 'dataplatform.docker.artifactory.global.bamgrid.net/timbru31/node-alpine-git:latest' }
+    }
+    parameters { 
+        string(name: 'GIT_COMMIT', defaultValue: '', description: 'The Git commit SHA to deploy')
+	}
+    environment {
+        AWSCLI_VERSION = '2.1.27'
+        AWS_REGION="us-east-1"
+        ENVIRONMENT = "${env.BRANCH_NAME == "main" ? 'prod' : env.BRANCH_NAME == "devel" ? 'dev' : env.BRANCH_NAME == "sandbox" ? 'sandbox' : 'pr' }"
+        ACCOUNT_ID = get_deploy_acc(ENVIRONMENT, 'account_id')
+        ASSUME_ROLE_NAME = get_deploy_acc(ENVIRONMENT, 'assume_role')
+        DELETE_ENV_FILE = get_deploy_acc(ENVIRONMENT, 'delete_env_file')
+        KEEP_ENV_FILE = get_deploy_acc(ENVIRONMENT, 'keep_env_file')
+        APPROVED = "No"        
+    }
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '30'))
+        disableConcurrentBuilds()
+        timeout(time: 60, unit: 'MINUTES')
+        timestamps()
+        ansiColor('xterm')
+        skipStagesAfterUnstable()
+    }
+    stages {
+        stage('Deployment acccount and environment') {
+            steps {
+                script {
+                   if ( params.GIT_COMMIT ) {
+                    echo "Git commit parameter provided - checking out revision for deploy"
+                    sh "git checkout ${params.GIT_COMMIT}"
+                    GIT_COMMIT = params.GIT_COMMIT
+                  }
+                    echo """
+                        ============================================== \n
+                        ACCOUNT_ID = ${ACCOUNT_ID} \n
+                        ASSUME_ROLE_NAME = ${ASSUME_ROLE_NAME} \n
+                        ENVIRONMENT = ${ENVIRONMENT} \n
+                        GIT_COMMIT = ${GIT_COMMIT} \n
+                        DELETE_ENV_FILE =${DELETE_ENV_FILE} \n
+                        KEEP_ENV_FILE =${KEEP_ENV_FILE} \n
+                        ============================================== \n
+                    """
+                }
+            }
+        }
+
+        stage('Build frontend') {
+            steps {
+                script {
+                    sh """
+                        cd apps/mui-ui
+                        rm -rf ${DELETE_ENV_FILE} && mv ${KEEP_ENV_FILE} .env
+                        cd ../..
+                        yarn && yarn build
+                        ls -lrth apps/mui-ui/build
+                    """
+                }
+            }
+        }
+
+
+        stage('Prepare for backend deployment') {
+            when { expression { return env.ENVIRONMENT != "pr" }}
+                steps {
+                    script {
+                        withAWS(role: env.ASSUME_ROLE_NAME, roleAccount: env.ACCOUNT_ID) {
+                            sh """
+                            cd infrastructure
+                            npm install
+                            npm run print
+                            """
+                        }   
+                    }
+                }
+        }
+
+        stage("Approval"){
+            when { expression { return env.ENVIRONMENT != "pr" }}
+            steps {
+                script {
+                    APPROVED = input( id: 'deploy', message: 'Ok to deploy this change?', submitter: 'gchinnathambi, mkumar9, kmadhurivenna, sallada, vvemani, rthokala, hmadala, skonduri, vkumar6, aramirez13, MatheuSoto, CLEVH003', 
+                        parameters: [ 
+                            choice(
+                                choices: ["No", "Yes"],
+                                name: "Approve", 
+                                description:"Input yes to approve the deployment"
+                            )
+                        ]
+                    )
+                    echo "Approval Status = ${APPROVED}"
+                }
+            }
+        }
+
+        stage("Deploy") {
+            when { expression { return APPROVED == 'Yes' && env.ENVIRONMENT != "pr" }}
+            steps {
+                script {
+                    withAWS(role: env.ASSUME_ROLE_NAME, roleAccount: env.ACCOUNT_ID) {
+                        sh """
+                            cd infrastructure
+                            npm run deploy
+                        """
+                    }
+                }
+            }
+        }
+    }
+    post{
+        always{
+            cleanWs()
+        }
+    }
+}
+
+def get_deploy_acc(account, field) {
+    account_map = [
+        'pr': [
+            account_id: "716915692812",
+            assume_role: "dp-cicd-admin",
+            keep_env_file: ".env.dev",
+            delete_env_file: ".env.local .env.sandbox .env.prod"  
+            ],
+        'sandbox': [
+            account_id: "716915692812",
+            assume_role: "dp-cicd-admin",
+            keep_env_file: ".env.sandbox",
+            delete_env_file: ".env.local .env.dev .env.prod"  
+            ],
+        'dev': [
+            account_id: "231874138027",
+            assume_role: "dp-cicd-admin",
+            keep_env_file: ".env.dev",
+            delete_env_file: ".env.local .env.sandbox .env.prod"
+        ],
+        'prod': [
+            account_id: "157321289635",
+            assume_role: "dp-cicd-admin",
+            keep_env_file: ".env.prod",
+            delete_env_file: ".env.local .env.sandbox .env.dev"
+        ]
+    ]
+    return account_map[account][field]
+}

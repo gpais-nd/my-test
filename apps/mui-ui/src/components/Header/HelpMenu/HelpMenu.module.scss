@@ -1,0 +1,21 @@
+.help {
+  position: absolute;
+  right: 5rem;
+  align-items: center;
+
+  .helpMenu {
+    position: absolute;
+    right: 0;
+    z-index: 1010;
+    align-items: center;
+  }
+
+  .icon {
+    color: #f6f5f5;
+    font-size: 3rem;
+  }
+
+  .option {
+    cursor: pointer;
+  }
+}

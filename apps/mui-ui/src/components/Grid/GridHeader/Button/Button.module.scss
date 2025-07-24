@@ -1,0 +1,33 @@
+.button {
+  button {
+    background: var(--brown-70);
+    border: none;
+    border-radius: 6.25rem;
+    color: var(--brown-50);
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0.63rem 1.5rem;
+    text-decoration: underline;
+    text-transform: capitalize;
+    align-items: center;
+    display: flex;
+
+    &:hover {
+      background: var(--brown-70);
+    }
+
+    .buttonName {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 1.5rem;
+      text-transform: capitalize;
+    }
+
+    .icon {
+      margin-left: 1rem;
+    }
+  }
+}

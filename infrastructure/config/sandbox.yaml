@@ -1,0 +1,8 @@
+env_short: sb
+kms:
+    kms_arn: arn:aws:kms:us-east-1:716915692812:key/c4f59008-a64f-4834-bbab-a7d167438b71
+dns_domain_id:
+    name: "sb.oms.disn.io"
+    san: "*.sb.oms.disn.io"
+acm:
+    arn: arn:aws:acm:us-east-1:716915692812:certificate/654b4099-19f5-42b5-8b5a-7e7493c4846c

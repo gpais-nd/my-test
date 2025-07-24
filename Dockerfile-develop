@@ -1,0 +1,15 @@
+FROM node:18.12.1-slim
+
+RUN mkdir /app
+WORKDIR /app
+
+COPY ./ /app
+
+RUN cd /app/apps/mui-ui && rm -rf .env.local .env.production .env.staging && mv .env.develop .env
+RUN cd /app && yarn && yarn build
+
+RUN cd /app
+RUN cp -Rf /app/apps/mui-ui /app
+RUN cp -Rf /app/services/mui-api /app
+
+CMD ["sh", "-c", "cd /app/mui-api && npm run start:production"]

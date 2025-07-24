@@ -1,0 +1,32 @@
+.login {
+  background: var(--brown-95);
+  border-radius: 1.25rem;
+  font-family: Roboto;
+  // height: 10rem;
+  margin: 3rem auto;
+  padding: 1rem 3.75rem 2rem;
+  width: 35rem;
+
+  .button {
+    background: var(--filter-primary);
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    margin: 2rem auto 0 auto;
+    text-align: center;
+    width: 10rem;
+
+    button {
+      border-radius: 6.25rem;
+      color: #ffffff;
+      height: 2.75rem;
+      font-family: Roboto;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.5rem;
+      text-align: center;
+    }
+  }
+}

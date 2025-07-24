@@ -1,0 +1,53 @@
+{
+  "stageToProdMigration": {
+    "sourceClient": {
+      "host": "(replace_me)",
+      "port": 5432,
+      "database": "dmed",
+      "user": "data_experience",
+      "password": "(replace_me)",
+      "applicationName": "staging-db"
+    },
+    "targetClient": {
+      "host": "(replace_me)",
+      "port": 5432,
+      "database": "dataportal_staging",
+      "user": "data_experience",
+      "password": "(replace_me)",
+      "applicationName": "production-db"
+    },
+    "compareOptions": {
+      "author": "matthew.marple",
+      "outputDirectory": "db_migration_patches",
+      "getAuthorFromGit": false,
+      "schemaCompare": {
+        "namespaces": ["public"],
+        "dropMissingTable": false,
+        "dropMissingView": false,
+        "dropMissingFunction": false,
+        "dropMissingAggregate": false,
+        "roles": []
+      },
+      "dataCompare": {
+        "enable": false,
+        "tables": [
+          {
+            "tableName": "my-table-name",
+            "tableSchema": "public or any-other-namespace",
+            "tableKeyFields": ["list-of-key-fields-name"]
+          },
+          {
+            "tableName": "my-other-table-name",
+            "tableSchema": "public or any-other-namespace",
+            "tableKeyFields": ["list-of-key-fields-name"]
+          }
+        ]
+      }
+    },
+    "migrationOptions": {
+      "patchesDirectory": "db_migration_patches",
+      "historyTableName": "migrations",
+      "historyTableSchema": "public"
+    }
+  }
+}

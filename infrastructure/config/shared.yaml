@@ -1,0 +1,18 @@
+prefix: "dp"
+app: "oms"
+component: "ui-infra"
+region: "us-east-1"
+stack_tags:
+    squadName: "grogu"
+    productName: "oms"
+    domain: "platform"
+    data_classification: "internal-use"
+    data_sensitivity: "metadata"
+    disney_owner_email: "DMED.DPGrogu@disney.com"
+    vcs_repo: "https://github.bamtech.co/data-platform/metadata-mart-ui.git"
+    TerminateExceptionFlag: "true"
+
+region_sf: ue1
+domain_sf: plat
+account_function_sf: comp
+realm_sf: gen

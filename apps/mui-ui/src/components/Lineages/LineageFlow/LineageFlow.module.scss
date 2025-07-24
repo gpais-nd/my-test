@@ -1,0 +1,468 @@
+// React flow overwrites
+.react-flow__node-group {
+  background-color: rgba(207, 182, 255, 0.4);
+  border-color: #9e86ed;
+}
+
+// Custom Styles
+.customNodeWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 225px;
+}
+
+.customNode {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #71afc0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: stretch;
+  padding: 2px 5px 2px 20px;
+  width: 220px;
+  position: relative;
+  &:hover {
+    cursor: pointer;
+  }
+  p {
+    font-size: 0.45rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.handle {
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  height: 2px;
+  width: 2px;
+  z-index: 0;
+}
+
+.highlight {
+  width: 4.3125rem;
+}
+
+.highlighted {
+  background: rgb(245, 221, 217);
+  border: 1px solid rgb(180, 82, 46, 1);
+  color: rgb(154, 63, 30);
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.selected {
+  border: 1px solid rgb(180, 82, 46, 1);
+}
+
+.highlight_on {
+  background: #ffc39f;
+}
+
+.highlight_off {
+  background: #fff;
+}
+.hiddenNodesButton {
+  position: absolute;
+  left: 50%;
+  margin-top: 20px;
+  z-index: 999;
+}
+
+.searchContainer {
+  background: #fff;
+  position: absolute;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  z-index: 999;
+}
+.searchBox {
+  margin-top: 16px;
+}
+.searchInput {
+  width: 350px;
+}
+.selectedNode {
+  margin-top: 10px;
+  background: #222;
+  border: 1px solid #71afc0;
+  border-radius: 5px;
+  width: 350px;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+
+  .selectedNodeContent {
+    color: var(--brown-50);
+    padding: 16px;
+
+    p {
+      margin-top: 0;
+      font-size: 0.9rem;
+    }
+  }
+
+  .selectedNodeToolbarDivider {
+    padding-top: 8px;
+  }
+
+  .selectedNodeToolbarHigh {
+    display: flex;
+    gap: 24px;
+    padding: 8px;
+    justify-content: flex-start;
+  }
+
+  .selectedNodeToolbarBlock {
+    display: flex;
+    flex-direction: column;
+
+    .selectedNodeToolbarItem {
+      align-items: center;
+      display: flex;
+      gap: 8px;
+    }
+
+    .iconinfo {
+      height: 20px;
+    }
+
+    .selectedNodeToolbarBlockTitle {
+      align-items: center;
+      color: var(--fontColorInactive);
+      display: flex;
+      gap: 8px;
+      justify-content: flex-start;
+
+      svg,
+      span {
+        color: var(--fontColorWellSecondary);
+        font-size: 0.8rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .selectedNodeToolbar {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    padding: 16px;
+    gap: 24px;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  span {
+    font-weight: bold;
+    color: var(--brown-50);
+  }
+
+  .selectedNodeToolbarButtons {
+    width: 100%;
+    button {
+      border: 1px solid var(--brown-70);
+    }
+  }
+}
+
+.actionButtonsContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 8px;
+  width: 100%;
+
+  button {
+    flex: 24%;
+  }
+}
+
+.selectedNodeToolbar,
+.hiddenNodesButton {
+  button {
+    background: var(--brown-50);
+    align-items: center;
+    display: flex;
+    min-height: 35px;
+    font-size: 0.7rem;
+    gap: 8px;
+
+    svg {
+      fill: #fff;
+    }
+
+    span {
+      color: #fff;
+    }
+
+    &:disabled {
+      background: var(--backgroundMain1);
+      border: 1px solid var(--neutral-92);
+      cursor: not-allowed;
+      span {
+        color: var(--neutral-text-disabled);
+      }
+      svg {
+        fill: var(--neutral-text-disabled);
+      }
+    }
+
+    &:hover {
+      background: rgba(255, 249, 248, 1);
+      border: 1px solid var(--brown-50);
+      cursor: pointer;
+
+      svg {
+        fill: var(--brown-50);
+      }
+
+      span {
+        color: var(--brown-50);
+      }
+    }
+  }
+}
+
+.downloadLineageButton {
+  height: 55px;
+  margin-top: 2px;
+}
+
+.rootNode {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #71afc0;
+  border-radius: 25px;
+  display: flex;
+  gap: 8px;
+  justify-content: stretch;
+  padding: 5px 12px;
+  width: 230px;
+  height: 32px;
+  position: relative;
+  p {
+    font-size: 0.5rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+  }
+  .actionSection {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .actionIcon {
+    align-items: flex-start;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonLeft {
+    left: -3px;
+    top: 10px;
+  }
+
+  .buttonRight {
+    right: -3px;
+    top: 10px;
+  }
+}
+
+.icon,
+.iconQuery {
+  height: 10px;
+  width: 10px;
+}
+
+.iconinfo {
+  height: 25px;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+
+  p {
+    max-width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.infoCustomSection {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  div {
+    align-items: center;
+    display: flex;
+    gap: 2px;
+    padding: 5px 0;
+  }
+
+  p {
+    max-width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.groupTitleSection {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  p {
+    font-size: 0.5rem;
+  }
+}
+
+.nodesButton {
+  background: #71afc0;
+  border: none;
+  display: grid;
+  cursor: pointer;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 3px 1px rgba(26, 26, 26, 0.15);
+  box-shadow: 0px 1px 2px 0px rgba(26, 26, 26, 0.3);
+  z-index: 100;
+
+  svg {
+    height: 10px;
+    width: 10px;
+    fill: white;
+  }
+}
+
+.buttonLeft {
+  left: -8px;
+  top: 5px;
+}
+
+.buttonRight {
+  right: -8px;
+  top: 5px;
+}
+
+.buttonIcon {
+  all: unset;
+  cursor: pointer;
+
+  &:hover img {
+    transform: scale(1.2);
+  }
+
+  img {
+    height: 15px;
+    width: 15px;
+    transition: all 300ms ease-in-out;
+  }
+}
+
+.viewMore {
+  all: unset;
+  border: 1px solid #1c1b1f;
+  background-color: #d5eff6;
+  border-radius: 0 0 0.25rem 0.25rem;
+  box-sizing: border-box;
+  border-top: 0;
+  color: #1c1b1f;
+  cursor: pointer;
+  display: flex;
+  font-size: 0.4rem;
+  font-weight: 600;
+  height: 1.5rem;
+  justify-content: center;
+  padding-top: 8px;
+  text-transform: uppercase;
+  margin: 0;
+  width: 100%;
+}
+
+.overlayContainer {
+  margin-top: 50px;
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlayBg {
+  background-color: #fff;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  color: var(--brown-50);
+  z-index: 999;
+}
+
+.depthContainer {
+  position: absolute;
+  left: 3px;
+  top: 6px;
+}
+.depthLevel {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+
+  p {
+    font-size: 0.4rem;
+    font-weight: 600;
+  }
+}
+.depthLevelInfo {
+  width: 24px;
+  height: 24px;
+
+  p {
+    font-size: 0.8rem;
+  }
+}

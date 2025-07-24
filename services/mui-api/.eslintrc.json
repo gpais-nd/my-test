@@ -1,0 +1,18 @@
+{
+  "extends": "./node_modules/gts/",
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-useless-catch": "off",
+    "node/no-extraneous-import": "off",
+    "node/no-unpublished-import": "off",
+    "node/no-unpublished-require": "off",
+    "node/no-missing-require": "off",
+    "prefer-const": "off",
+    "no-constant-condition": "off",
+    "no-sparse-arrays": "off",
+    "no-empty": "off",
+    "import/first": "off",
+    "no-prototype-builtins": "off"
+  }
+}

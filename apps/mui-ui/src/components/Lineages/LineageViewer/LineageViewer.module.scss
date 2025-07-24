@@ -1,0 +1,249 @@
+.sectionTitle {
+  color: var(--brown-50);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo {
+  height: 18px;
+  width: auto;
+  position: absolute;
+  top: 0.3rem;
+  left: 15px;
+  z-index: 1;
+}
+
+.lineageViewer {
+  .lineageContent {
+    border-radius: 0.7rem;
+    box-shadow: 0 1px 3px 0 #1a1a1a4d, 0 4px 8px 3px #1a1a1a26;
+
+    .dataSourceLogo {
+      position: absolute;
+      right: 15px;
+      top: 2px;
+    }
+
+    .nodeContent {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .nodeIconContainer {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 1rem;
+        width: 0.75rem;
+      }
+
+      .rootNodeIconContainer {
+        height: 1.375rem;
+      }
+
+      .nodeTypeName {
+        flex: 1;
+        height: 1rem;
+        padding-left: 0.1993rem;
+      }
+
+      .rootNodeTypeName {
+        height: 1.375rem;
+      }
+    }
+
+    .nodeContentData {
+      display: flex;
+      margin-left: 14px;
+    }
+
+    .nodeContentDataRoot {
+      margin-left: 4px;
+    }
+
+    .clickableNode {
+      cursor: pointer;
+    }
+
+    .nodeType {
+      color: #8c8c8c;
+      font-size: 0.4375rem;
+      font-weight: 400;
+      height: 0.625rem;
+      line-height: 0.625rem;
+    }
+
+    .nodeName {
+      color: #000000;
+      font-size: 0.5rem;
+      font-weight: 400;
+      height: 1rem;
+      line-height: 1rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 9rem;
+    }
+
+    .rootNode {
+      border-radius: 1.40625rem;
+      height: 100%;
+      padding: 0.28125rem 0.9375rem;
+
+      .logo {
+        height: 10px;
+        left: 0.9rem;
+        top: 0.7rem;
+      }
+    }
+
+    .rootHighlighted {
+      background: #fff9f8;
+      border: 1px solid #b4522e;
+    }
+
+    .rootNodeName {
+      font-weight: 600;
+      height: 0.75rem;
+      line-height: 0.75rem;
+      width: 9rem;
+    }
+
+    .node {
+      padding: 0.5rem 0.5rem 0.5rem 0.9rem;
+      width: 100%;
+    }
+
+    .Dataset {
+      border: 1px solid #71afc0;
+    }
+
+    .Datajob {
+      border: 1px solid #ffc39f;
+    }
+
+    .Dataflow {
+      border: 1px solid #64c20c;
+    }
+
+    .Field {
+      border: 1px solid #0568ca;
+    }
+  }
+
+  .downloadButton {
+    background: var(--brown-70);
+    color: var(--brown-50);
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .downloadGroupButton {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    width: fit-content;
+  }
+}
+
+.nodeIcon {
+  border: 1px solid #f1f1f1;
+  border-radius: 12px;
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &.Datajob {
+    background-color: #d04711;
+  }
+
+  &.Dataset {
+    background-color: #0ea2dc;
+  }
+
+  &.Dataflow {
+    background-color: #64c20c;
+  }
+
+  &.Field {
+    background-color: #0568ca;
+  }
+}
+
+.sectionLegend {
+  display: flex;
+  gap: 50px;
+  padding-left: 40px;
+  font-size: 0.8rem;
+
+  .sectionLegendInternal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .block {
+    position: relative;
+
+    &::before {
+      align-items: center;
+      border: 1px solid gray;
+      content: '';
+      display: flex;
+      height: 15px;
+      justify-content: center;
+      left: -30px;
+      position: absolute;
+      width: 15px;
+    }
+  }
+  .blockImage {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+  }
+  .upstream {
+    &::before {
+      content: '<-';
+      background-color: lightblue;
+    }
+  }
+  .downstream {
+    &::before {
+      content: '->';
+      background-color: orange;
+    }
+  }
+  .delta {
+    &::before {
+      content: '';
+      background-color: hotpink;
+    }
+  }
+  .depth {
+    &::before {
+      content: '+';
+      background-color: white;
+    }
+  }
+  .depthd {
+    &::before {
+      content: '-';
+      background-color: white;
+    }
+  }
+  .virtual {
+    &::before {
+      content: '';
+      background-color: lightgreen;
+    }
+  }
+}
+
+.tooltip {
+  font-size: 1rem;
+  width: auto;
+}

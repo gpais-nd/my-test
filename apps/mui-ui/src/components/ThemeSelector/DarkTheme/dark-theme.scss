@@ -1,0 +1,69 @@
+@import './variables-dark-theme.css';
+
+* {
+  box-sizing: border-box; // dark theme
+}
+
+html {
+  height: 100%;
+}
+
+// html,
+// input {
+//   fill: var(--fontColorLightGrey);
+//   color: var(--fontColorLightGrey);
+//   font-size: var(--fontSize);
+// }
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  // background: var(--darkBackground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+// a,
+// a:visited {
+//   color: var(--colorInfo);
+//   text-decoration: none;
+// }
+
+// code {
+//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+//     monospace;
+// }
+//
+#root {
+  width: 100%;
+}
+
+#root2 {
+  height: 100%;
+  width: 100%;
+}
+
+#rootdark {
+  height: 100%;
+  width: 100%;
+}
+//
+// textarea,
+// input {
+//   &:focus {
+//     border-color: var(--activeBackground);
+//   }
+// }
+
+// Global styles override for Trek input components because by default input labels
+// are transformed to UPPERCASE but in our application we are using Capitalized labels
+// for every the inputs
+.TrekParagraphInput-label span,
+.TrekTextField-label span,
+.TrekDropDown-label span,
+.TrekLabel-root span {
+  text-transform: capitalize !important;
+}

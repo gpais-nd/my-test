@@ -1,0 +1,12 @@
+Resources:
+  WebAclLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: aws-waf-logs-${self:custom.var.app}
+      KmsKeyId: ${self:custom.env.kms.kms_arn}
+      RetentionInDays: 30
+      Tags:
+        - Key: Application
+          Value: oms-cwl
+        - Key: environment
+          Value: ${self:custom.env.env_short} 

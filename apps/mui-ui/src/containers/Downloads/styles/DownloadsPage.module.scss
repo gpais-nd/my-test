@@ -1,0 +1,33 @@
+.header {
+  font-family: Roboto;
+  font-size: 18px;
+  color: #B4522E;
+  background-color: #FFF9F8;
+  padding: 1rem;
+  margin: 0;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: left;
+}
+
+.content {
+  display: flex;
+}
+
+.bulkDownload {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 40%;
+  background-color: transparent;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.downloadResultsTable {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 60%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}

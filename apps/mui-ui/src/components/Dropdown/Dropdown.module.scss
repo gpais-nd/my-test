@@ -1,0 +1,25 @@
+.dropdown {
+  .input {
+    border-radius: 0.5rem;
+    border: 0.5px solid var(--light-theme-neutral-border-weak, #bbb);
+    box-shadow: 0px 1px 3px 1px rgba(41, 59, 75, 0.1),
+      0px 1px 2px 0px rgba(41, 59, 75, 0.1);
+    width: 100%;
+  }
+
+  .dropdownIndicator {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.dropdownOption {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .sideLabel {
+    color: var(--light-theme-neutral-text-weak);
+    float: right;
+  }
+}

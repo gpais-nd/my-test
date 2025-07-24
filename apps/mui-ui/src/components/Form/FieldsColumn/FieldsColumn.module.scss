@@ -1,0 +1,8 @@
+.fieldsColumn {
+  flex: auto;
+  padding: 0 1.5rem;
+}
+
+.fieldsColumn:not(:first-child) {
+  border-left: solid 0.5px #10253F;
+}

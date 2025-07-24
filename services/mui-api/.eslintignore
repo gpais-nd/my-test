@@ -1,0 +1,7 @@
+dist/
+node_modules/
+src/scripts/input_raw_modules
+src/scripts/ready_to_tokenize
+src/scripts/tokenized_modules
+src/seeds/development/initDB.ts
+src/seeds/local/initDB.ts

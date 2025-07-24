@@ -1,0 +1,104 @@
+.glossaryMetadata {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .searchMetadata {
+    background: white;
+    box-shadow: rgba(93, 102, 139, 0.2) 0px 0px 6px 0px;
+    top: 0;
+    position: sticky;
+    width: 80%;
+    z-index: 90;
+  }
+
+  .abc {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .letterButton {
+    color: var(--brown-50);
+    background: white;
+    border: 1px solid var(--brown-50);
+
+    &[class*='MuiButton-containedPrimary'] {
+      background: var(--brown-50);
+      color: white;
+    }
+
+    &:hover {
+      background: var(--brown-50);
+      color: white;
+    }
+  }
+
+  .bookmark {
+    align-items: center;
+    background-color: var(--brown-50);
+    border-radius: 0.5rem;
+    justify-content: center;
+    border: 1px solid rgb(235, 236, 240);
+    display: flex;
+    height: 40px;
+    width: 40px;
+
+    svg {
+      fill: #fff;
+    }
+  }
+
+  .glossaryHeader {
+    box-shadow: rgba(93, 102, 139, 0.2) 0px 0px 6px 0px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .noData {
+    align-items: center;
+    font-size: 2rem;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+  }
+
+  .glossaryContent {
+    border-radius: 0.5rem;
+    border: 1px solid rgb(235, 236, 240);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 300px;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    overflow-y: auto;
+    width: 80%;
+
+    .glossaryItem {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 0 16px;
+      border-radius: 0.5rem;
+      border: 1px solid rgb(235, 236, 240);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #f3f3f3;
+      }
+    }
+
+    h4 {
+      color: var(--brown-50);
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-top: 8px;
+    }
+  }
+}

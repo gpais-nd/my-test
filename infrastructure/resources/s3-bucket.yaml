@@ -1,0 +1,81 @@
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    #DeletionPolicy: Retain
+    Properties:
+      BucketName: ${self:custom.var.prefix}-${self:custom.var.region_sf}-${self:custom.var.domain_sf}-${self:custom.var.app}-frontend-${self:custom.env.env_short}
+      VersioningConfiguration:
+        Status: Enabled
+      # BucketEncryption:
+      #   ServerSideEncryptionConfiguration:
+      #     - ServerSideEncryptionByDefault:
+      #         SSEAlgorithm: 'aws:kms'
+      #         KMSMasterKeyID: ${self:custom.env.kms.kms_arn}
+      #       BucketKeyEnabled: true
+      WebsiteConfiguration:
+        ErrorDocument: index.html
+        IndexDocument: index.html
+      Tags:
+          - Key: Application
+            Value: oms-bucket
+          - Key: environment
+            Value: ${self:custom.env.env_short}
+  S3AccessPolicy:
+    Type: 'AWS::S3::BucketPolicy'
+    Properties:
+      Bucket: !Ref S3Bucket
+      PolicyDocument:
+        Statement:
+          - Sid: ReadGetObject
+            Effect: Allow
+            Action: s3:GetObject
+            Principal:
+              CanonicalUser:
+                Fn::GetAtt:
+                  - CloudFrontOrigin
+                  - S3CanonicalUserId
+            Resource: !Join 
+              - ''
+              - - 'arn:aws:s3:::'
+                - !Ref S3Bucket
+                - /*
+          - Action: s3:GetObject
+            Condition:
+              StringEquals:
+                AWS:SourceArn:
+                  Fn::Join:
+                    - ""
+                    - - 'arn:aws:cloudfront::'
+                      - !Ref 'AWS::AccountId'
+                      - ':distribution/'
+                      - Ref: CloudFront
+            Effect: Allow
+            Principal:
+              Service: cloudfront.amazonaws.com
+            Resource:
+              - Fn::GetAtt:
+                  - S3Bucket
+                  - Arn
+              - Fn::Join:
+                  - ""
+                  - - Fn::GetAtt:
+                        - S3Bucket
+                        - Arn
+                    - /*
+          - Sid: PutObjectAccess
+            Effect: Allow
+            Action: 
+              - s3:PutObject
+              - s3:DeleteObject
+            Principal:
+              AWS:
+                - !Sub "arn:aws:iam::${AWS::AccountId}:root"
+            Resource: !Join 
+              - ''
+              - - 'arn:aws:s3:::'
+                - !Ref S3Bucket
+                - /*
+Outputs:
+  S3Bucket:
+    Value: !Ref S3Bucket
+    Description: S3 Bucket for oms frontend

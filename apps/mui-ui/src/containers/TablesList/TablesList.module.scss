@@ -1,0 +1,32 @@
+.tablesList {
+  table {
+    tbody {
+      tr {
+        padding: 1.5rem 0;
+      }
+    }
+  }
+
+  .gridFilterForm {
+    .gridFilterField {
+      float: left;
+      height: 5.5rem;
+      margin-bottom: 2rem;
+      margin-right: 1.5rem;
+      min-width: 20.625rem;
+
+      .gridFieldLabel {
+        color: var(--brown-50);
+        font-size: 1rem;
+        font-weight: 400;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .gridFieldInput {
+        height: 3.5rem;
+      }
+    }
+  }
+}

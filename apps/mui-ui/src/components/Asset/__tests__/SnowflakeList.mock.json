@@ -1,0 +1,4802 @@
+[
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_qa.customer_modeling.$snowflake_database.customer_modeling.andetech_qoe_adtk_looker.9885669",
+            "asset_name": "$snowflake_database.customer_modeling.andetech_qoe_adtk_looker",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": "",
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_qa",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": "",
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_int.data_architecture_stage.$trans_subscriptions_final_without_device.128216726",
+            "asset_name": "$trans_subscriptions_final_without_device",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_int",
+                "schema_name": "data_architecture_stage",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_prod.dplus_analytics.2021-04-23 last 4 example(2).14067261",
+            "asset_name": "2021-04-23 last 4 example(2)",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_prod",
+                "schema_name": "dplus_analytics",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_prod.eplus_analytics.2022_college_football_conference_mapping.122556218",
+            "asset_name": "2022_college_football_conference_mapping",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_prod",
+                "schema_name": "eplus_analytics",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_prod.acquisition.246_click_only_pascal.4698805",
+            "asset_name": "246_click_only_pascal",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_prod",
+                "schema_name": "acquisition",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_prod.acquisition.246_espnplus_flat_table.4606701",
+            "asset_name": "246_espnplus_flat_table",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_prod",
+                "schema_name": "acquisition",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.acquisition.2_updated_historic_spend_conversions-2022-2020_convesions_year_week_campaign.58349524",
+            "asset_name": "2_updated_historic_spend_conversions-2022-2020_convesions_year_week_campaign",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "acquisition",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_prod.dplus_analytics.61k chargeback accounts.13169874",
+            "asset_name": "61k chargeback accounts",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_prod",
+                "schema_name": "dplus_analytics",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.dplus_analytics._dev_tmp_embedding_test_audience_2023_08_25.145128330",
+            "asset_name": "_dev_tmp_embedding_test_audience_2023_08_25",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "dplus_analytics",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus._qe_fact_disney_account_watches_agg_cv5747.140335277",
+            "asset_name": "_qe_fact_disney_account_watches_agg_cv5747",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": "this ddl creates account-level roll-up table, which will be used to derive materialized views.",
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.raw.`$mytable`.117935474",
+            "asset_name": "`$mytable`",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "raw",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_qa.disney_plus.a.139130666",
+            "asset_name": "a",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_qa",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "view",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.a.146965145",
+            "asset_name": "a",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_int.data_architecture.a1.16579594",
+            "asset_name": "a1",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_int",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_canary_dev.raw.a1.8130971",
+            "asset_name": "a1",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_canary_dev",
+                "schema_name": "raw",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.raw.a1.239738",
+            "asset_name": "a1",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "raw",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_int.data_architecture.a1_keep.16578714",
+            "asset_name": "a1_keep",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_int",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_prod.data_architecture.a1_offload.16578734",
+            "asset_name": "a1_offload",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_prod",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "external table",
+            "created_by": null,
+            "created_time": null,
+            "env": "prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_int.disney_plus.a_tmp_gsvd.139842163",
+            "asset_name": "a_tmp_gsvd",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_int",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.a_tmp_gsvd.139842137",
+            "asset_name": "a_tmp_gsvd",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.customer_modeling.aa_sim_inapp_upsell.21233094",
+            "asset_name": "aa_sim_inapp_upsell",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.customer_modeling.aa_sim_inapp_upsell_v2.21245891",
+            "asset_name": "aa_sim_inapp_upsell_v2",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.customer_modeling.aa_sim_inapp_upsell_v3.22911046",
+            "asset_name": "aa_sim_inapp_upsell_v3",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.customer_modeling.aa_sim_live_sports_v1.22374672",
+            "asset_name": "aa_sim_live_sports_v1",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.customer_modeling.aa_sim_mstq_not_stat_sig.21431121",
+            "asset_name": "aa_sim_mstq_not_stat_sig",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.customer_modeling.aa_sim_mstq_stat_sig.21431084",
+            "asset_name": "aa_sim_mstq_stat_sig",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.customer_modeling.aa_sim_mstq_stat_sig_matched.21432071",
+            "asset_name": "aa_sim_mstq_stat_sig_matched",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.customer_modeling.aa_sim_winback_promo_v2.23100154",
+            "asset_name": "aa_sim_winback_promo_v2",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.customer_modeling.aa_sim_winback_v1.22938966",
+            "asset_name": "aa_sim_winback_v1",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.aa_test.11726247",
+            "asset_name": "aa_test",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.customer_modeling.aaa_espn_early_life_test_final_new.84234082",
+            "asset_name": "aaa_espn_early_life_test_final_new",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_prod.customer_modeling.aaaa_espn_c360_email.117684063",
+            "asset_name": "aaaa_espn_c360_email",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_prod",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_prod.customer_modeling.aaaa_espn_c360_inapp.117698754",
+            "asset_name": "aaaa_espn_c360_inapp",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_prod",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_prod.customer_modeling.aaaa_espn_c360_messaging_summary.117698789",
+            "asset_name": "aaaa_espn_c360_messaging_summary",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_prod",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_prod.customer_modeling.aaaa_espn_c360_push.117684165",
+            "asset_name": "aaaa_espn_c360_push",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_prod",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_prod.customer_modeling.aaaa_espn_early_life_test_final_new.119373618",
+            "asset_name": "aaaa_espn_early_life_test_final_new",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_prod",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.customer_modeling.aaaa_test_email_direct_response.12754452",
+            "asset_name": "aaaa_test_email_direct_response",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "customer_modeling",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.aar_test_1302.139200787",
+            "asset_name": "aar_test_1302",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.aarushi_dae.56243854",
+            "asset_name": "aarushi_dae",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.aarushi_dev.58285884",
+            "asset_name": "aarushi_dev",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.aarushi_dev_2.58287782",
+            "asset_name": "aarushi_dev_2",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.aarushi_gam.56246287",
+            "asset_name": "aarushi_gam",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_int.data_architecture.aarushi_multithreading_test.42258352",
+            "asset_name": "aarushi_multithreading_test",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_int",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_int.data_architecture.aarushi_temp_dates.47125629",
+            "asset_name": "aarushi_temp_dates",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_int",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.aarushi_test.24444990",
+            "asset_name": "aarushi_test",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.aarushi_test_3.58291042",
+            "asset_name": "aarushi_test_3",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_int.data_architecture.aarushi_test_4.105681124",
+            "asset_name": "aarushi_test_4",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_int",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.aarushi_test_dae.56263652",
+            "asset_name": "aarushi_test_dae",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.aarushi_test_dae_geo.56266377",
+            "asset_name": "aarushi_test_dae_geo",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.aarushi_test_dae_joined.56267517",
+            "asset_name": "aarushi_test_dae_joined",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.aarushi_test_dea.56254036",
+            "asset_name": "aarushi_test_dea",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_int.data_architecture.aarushi_test_fw.102500652",
+            "asset_name": "aarushi_test_fw",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_int",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.aarushi_test_gam.56263349",
+            "asset_name": "aarushi_test_gam",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.aarushi_test_gam_geo.56266257",
+            "asset_name": "aarushi_test_gam_geo",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.aarushi_test_gam_joined.56266642",
+            "asset_name": "aarushi_test_gam_joined",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_int.data_architecture.aarushi_test_session_data.64872676",
+            "asset_name": "aarushi_test_session_data",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_int",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.data_architecture.aarushi_test_sqa.75392861",
+            "asset_name": "aarushi_test_sqa",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_int.data_architecture.aarushi_test_ww.102497150",
+            "asset_name": "aarushi_test_ww",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_int",
+                "schema_name": "data_architecture",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_acq_analysis.56434339",
+            "asset_name": "ab_acq_analysis",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_inclholdout.149166265",
+            "asset_name": "ab_apac_email_engagement_inclholdout",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_inclholdout.149458700",
+            "asset_name": "ab_apac_email_engagement_inclholdout",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_inclholdout.149627783",
+            "asset_name": "ab_apac_email_engagement_inclholdout",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_inclholdout.149820319",
+            "asset_name": "ab_apac_email_engagement_inclholdout",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_inclholdout.150039791",
+            "asset_name": "ab_apac_email_engagement_inclholdout",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_inclholdout.150263895",
+            "asset_name": "ab_apac_email_engagement_inclholdout",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_inclholdout.150461166",
+            "asset_name": "ab_apac_email_engagement_inclholdout",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_inclholdout.150714539",
+            "asset_name": "ab_apac_email_engagement_inclholdout",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_inclholdout.151012115",
+            "asset_name": "ab_apac_email_engagement_inclholdout",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_inclholdout.151221321",
+            "asset_name": "ab_apac_email_engagement_inclholdout",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_inclholdout.151457232",
+            "asset_name": "ab_apac_email_engagement_inclholdout",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_wstreaming.149161919",
+            "asset_name": "ab_apac_email_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_wstreaming.149415942",
+            "asset_name": "ab_apac_email_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_wstreaming.149603285",
+            "asset_name": "ab_apac_email_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_wstreaming.149791804",
+            "asset_name": "ab_apac_email_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_wstreaming.149995930",
+            "asset_name": "ab_apac_email_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_wstreaming.150226839",
+            "asset_name": "ab_apac_email_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_wstreaming.150448987",
+            "asset_name": "ab_apac_email_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_wstreaming.150703239",
+            "asset_name": "ab_apac_email_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_wstreaming.150960547",
+            "asset_name": "ab_apac_email_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_wstreaming.151192419",
+            "asset_name": "ab_apac_email_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_email_engagement_wstreaming.151445224",
+            "asset_name": "ab_apac_email_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_push_engagement_wstreaming.149167940",
+            "asset_name": "ab_apac_push_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_push_engagement_wstreaming.149477299",
+            "asset_name": "ab_apac_push_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_push_engagement_wstreaming.149651784",
+            "asset_name": "ab_apac_push_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_push_engagement_wstreaming.149930142",
+            "asset_name": "ab_apac_push_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_push_engagement_wstreaming.150081538",
+            "asset_name": "ab_apac_push_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_push_engagement_wstreaming.150273774",
+            "asset_name": "ab_apac_push_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_push_engagement_wstreaming.150480762",
+            "asset_name": "ab_apac_push_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_push_engagement_wstreaming.150732805",
+            "asset_name": "ab_apac_push_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_push_engagement_wstreaming.151061295",
+            "asset_name": "ab_apac_push_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_push_engagement_wstreaming.151242325",
+            "asset_name": "ab_apac_push_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_apac_push_engagement_wstreaming.151475153",
+            "asset_name": "ab_apac_push_engagement_wstreaming",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_churn_metrics.11946280",
+            "asset_name": "ab_churn_metrics",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_churned_check.116018841",
+            "asset_name": "ab_churned_check",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_content_avaliability.28170390",
+            "asset_name": "ab_content_avaliability",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_content_avaliability2.28171618",
+            "asset_name": "ab_content_avaliability2",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_content_mapping_f28_demo_fs.13484774",
+            "asset_name": "ab_content_mapping_f28_demo_fs",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_content_metadata_similarities.142234999",
+            "asset_name": "ab_content_metadata_similarities",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_device_drivers.18749326",
+            "asset_name": "ab_device_drivers",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    },
+    {
+        "businessMetadata": {
+            "asset_id": "disneystreaming.aws_us_east_1.dss_dev.disney_plus.ab_dim_disney_marvel_mando_anz.7750969",
+            "asset_name": "ab_dim_disney_marvel_mando_anz",
+            "administrativeMetadata": null,
+            "descriptiveMetadata": {
+                "description": null,
+                "__typename": "DescriptiveMetadata"
+            },
+            "owner": null,
+            "app": null,
+            "__typename": "BusinessMetadata"
+        },
+        "sourceSpecificMetadata": {
+            "Snowflake": {
+                "database_name": "dss_dev",
+                "schema_name": "disney_plus",
+                "__typename": "Snowflake"
+            },
+            "__typename": "SourceSpecificMetadata"
+        },
+        "dataSource": "Snowflake",
+        "technicalMetadata": {
+            "asset_age": null,
+            "asset_status": null,
+            "asset_type": "base table",
+            "created_by": null,
+            "created_time": null,
+            "env": "non-prod",
+            "operationalMetadata": {
+                "active_bytes": null,
+                "est_monthly_cost": null,
+                "source_control_url": null,
+                "table_size": null,
+                "vcs": null,
+                "__typename": "OperationalMetadata"
+            },
+            "securityAndComplianceMetadata": null,
+            "usageMetadata": {
+                "last_accessed": null,
+                "last_accessed_age": null,
+                "top_queries": null,
+                "__typename": "UsageMetadata"
+            },
+            "__typename": "TechnicalMetadata"
+        },
+        "__typename": "AssetMetadata"
+    }
+]

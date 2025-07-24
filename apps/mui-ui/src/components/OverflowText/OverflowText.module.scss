@@ -1,0 +1,22 @@
+.overflowText {
+  background: inherit;
+  height: inherit;
+  position: relative;
+
+  .text {
+    height: inherit;
+  }
+
+  .viewMore {
+    background: inherit;
+    bottom: -0.1rem;
+    cursor: pointer;
+    padding-left: 0.5rem;
+    position: absolute;
+    right: 0;
+  }
+
+  .viewMoreLink {
+    color: var(--light-theme-alert-info-text);
+  }
+}

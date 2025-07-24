@@ -1,0 +1,74 @@
+.linkTabs {
+  background: #ffffff;
+  border-bottom: 1px solid var(--light-theme-neutral-border-weak);
+  height: 4.125rem;
+  align-items: center;
+  display: flex;
+
+  .linkTab {
+    float: left;
+    height: 100%;
+    width: 10rem;
+
+    .link {
+      align-items: center;
+      color: var(--light-theme-neutral-text-weak);
+      display: flex;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      height: 100%;
+      justify-content: center;
+      line-height: 1.625rem;
+      width: 100%;
+    }
+
+    .linkSelected {
+      color: var(--brown-50);
+      font-weight: 600;
+    }
+  }
+
+  .linkTabSelected {
+    border-bottom: 0.25rem solid var(--brown-50);
+  }
+
+  .menuItem {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+  }
+
+  .listLink {
+    max-height: 40px;
+  }
+
+  .datasourceIcon {
+    margin-left: 8px;
+  }
+
+  .searchField {
+    border-radius: 0.2rem;
+    position: absolute;
+    right: 1rem;
+    width: 25rem;
+
+    div {
+      padding-right: 0.2rem;
+    }
+  }
+
+  .inputField {
+    height: 2.3rem;
+    border-radius: 0.2rem;
+    width: 100%;
+
+    div {
+      padding-right: 0.2rem;
+    }
+
+    input {
+      padding: 7.2px 14px;
+    }
+  }
+}

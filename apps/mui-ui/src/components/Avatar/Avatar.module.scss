@@ -1,0 +1,70 @@
+.avatar {
+  .avatarImage {
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    svg {
+      fill: #f6f5f5;
+    }
+  }
+
+  .avatarMenu {
+    background: #e9e3e3;
+    border-radius: 0.4rem;
+    color: #222;
+    filter: drop-shadow(0px 1px 3px rgba(26, 26, 26, 0.3))
+      drop-shadow(0px 4px 8px rgba(26, 26, 26, 0.15));
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    width: auto;
+    z-index: 1100;
+
+    .user {
+      margin-top: 0.5rem;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .links {
+      cursor: pointer;
+      padding-bottom: 1rem;
+
+      .link {
+        align-items: center;
+        display: flex;
+        margin-top: 0.8rem;
+
+        a {
+          margin-left: 0.3rem;
+        }
+
+        svg {
+          color: #bbb;
+        }
+      }
+    }
+
+    .logout {
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+      float: right;
+      margin-top: 1rem;
+      text-align: right;
+
+      svg {
+        color: #bbbbbb;
+        margin-right: 0.5rem;
+      }
+
+      button {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,266 @@
+Resources:
+  WebAcl:
+    Type: AWS::WAFv2::WebACL
+    DependsOn:
+      - IPSet
+    Properties:
+      Name: ${self:custom.var.prefix}-${self:custom.var.region_sf}-${self:custom.var.domain_sf}-${self:custom.var.app}-waf-${self:custom.env.env_short}
+      Scope: CLOUDFRONT
+      CustomResponseBodies:
+        restricted_to_internal_network:
+          Content: >
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Restricted Access</title>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+              <style>
+                body {
+                  font-family: Verdana, sans-serif; /* Updated font family to Verdana */
+                  background-color: #f4f4f4;
+                  margin: 0;
+                  padding: 0;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 100vh;
+                  text-align: center;
+                }
+
+                .container {
+                  max-width: 600px; /* Increased container width */
+                  padding: 20px;
+                  background-color: #fff;
+                  border-radius: 8px;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+
+                h1 {
+                  color: #333;
+                  margin-bottom: 20px;
+                }
+
+                p {
+                  color: #666;
+                  line-height: 1.6;
+                }
+
+                .lock-icon {
+                  font-size: 48px;
+                  color: #333;
+                  margin-bottom: 20px;
+                }
+
+                .slack-icon {
+                  font-size: 24px;
+                  color: #333;
+                  margin-top: 20px;
+                }
+              </style>
+            </head>
+            <body>
+              <div class="container">
+                <i class="fas fa-lock lock-icon"></i>
+                <h1>Restricted Access</h1>
+                <p>This application is accessible only from the internal network. Please connect to the Disney network to access it.</p>
+              </div>
+            </body>
+            </html>
+          ContentType: TEXT_HTML
+      DefaultAction:
+        Block:
+          CustomResponse:
+            CustomResponseBodyKey: restricted_to_internal_network
+            ResponseCode: 403
+      VisibilityConfig:
+            SampledRequestsEnabled: true
+            CloudWatchMetricsEnabled: true
+            MetricName: DefaultAllowMetric
+      Rules:
+        - Name: AllowCertainIPs
+          Priority: 0
+          Action:
+            Allow: {}
+          Statement:
+            IPSetReferenceStatement:
+              ARN: !GetAtt IPSet.Arn
+          VisibilityConfig:
+            SampledRequestsEnabled: true
+            CloudWatchMetricsEnabled: true
+            MetricName: AllowCertainIPsMetric
+      Tags:
+        - Key: Application
+          Value: oms-waf
+        - Key: environment
+          Value: ${self:custom.env.env_short} 
+  IPSet:
+    Type: AWS::WAFv2::IPSet
+    Properties:
+      Name: AllowIPSet
+      Scope: CLOUDFRONT
+      IPAddressVersion: IPV4
+      Tags:
+        - Key: Application
+          Value: oms-waf
+        - Key: environment
+          Value: ${self:custom.env.env_short} 
+      Addresses:
+        - "139.104.127.0/26"
+        - "106.37.219.0/24"
+        - "198.102.219.0/24"
+        - "204.80.231.0/24"	# Access from DGN (Orlando)
+        - "74.123.204.0/24"	# Access from ESPN VPN(LA-SAS)
+        - "8.5.5.0/24"	# Raleigh NC
+        - "208.91.158.89/32"	# Hulu VPN 2
+        - "139.104.194.0/24"	# New Ip3
+        - "204.69.150.0/24"	# Access from DGN (China via HK)
+        - "192.195.66.0/24"	# Access from DGN (Orlando)
+        - "8.28.125.0/24"	# Hulu VPN 1
+        - "157.23.226.0/24"	# Amsterdam NL
+        - "8.28.125.0/26"	# Access from West Coast Office VPN
+        - "8.28.125.32/32"	# Access from Hulu VPN 1 
+        - "199.200.48.0/26"	# San Antonio TX (santx)
+        - "139.104.192.0/24"	# New Ip1
+        - "204.128.192.0/24"	# Access from DGN (Burbank)
+        - "208.246.35.0/24"	# Access from DGN (Orlando)
+        - "193.9.4.8/32"
+        - "192.234.2.90/32"	# Access from ESPN VPN
+        - "139.104.193.0/25"	# Omaha NE
+        - "8.28.125.33/32"	# Access from Hulu VPN 2
+        - "139.104.193.0/24"	# New Ip2
+        - "180.167.28.0/24"	# Shanghai Resort
+        - "139.104.192.0/25"	# NYC
+        - "208.91.158.85/32"	# East Coast Office VPN 11
+        - "192.168.1.0/24"	# Hulu VPN 5
+        - "139.104.194.0/26"	# San Francisco CA
+        - "199.181.130.0/24"	# Access from DGN (Hong Kong)
+        - "164.39.87.160/28"	# Manchester UK
+        - "193.9.4.0/24"	# Access from DGN (London)
+        - "204.130.8.253/32"	# Hulu VPN 6
+        - "76.23.213.32/32"	# Hulu VPN 3
+        - "12.201.130.128/27"	# Point Richmond CA
+        - "8.28.125.61/32"	# Hulu VPN 5
+        - "49.36.67.0/24"	# CISCO VPN2
+        - "49.37.155.0/24"  # CISCO VPN
+        - "49.37.156.0/24"	# CISCO VPN
+        - "49.37.157.0/24"	# CISCO VPN1
+        - "49.37.159.0/24"	# CISCO VPN
+        - "139.104.125.0/24" #provided by VPN team
+        - "139.104.126.0/24" #provided by VPN team
+        - "72.10.70.136/29" #seawa
+        - "4.53.156.136/29" #seawa
+        - "139.104.192.10/32" # VPN JFK3 useast1
+        - "139.104.192.11/32" # VPN JFK3 useast1
+        - "139.104.192.23/32" # VPN JFK3 useast1
+        - "139.104.192.24/32" # VPN JFK3 useast1
+        - "157.23.224.38/32" # VPN euwest
+        - "157.23.224.39/32" # VPN euwest
+        - "106.37.219.96/28" # HULU VPN
+        - "208.91.158.86/32" # HULU VPN
+        - "208.91.158.87/32" # HULU VPN
+        - "208.91.158.88/32" # HULU VPN
+        - "139.104.0.0/16" # New Ip6
+        - "157.23.224.0/25" # Cisco EU-WEST
+        - "157.23.244.0/25" # WLAN-TWDC
+        - "186.27.0.0/16" # Temp IP
+        - "192.234.2.0/25" # New Ip6
+        - "45.63.238.0/24" # Bristol Office
+  # LoggingConfiguration:
+  #   Type: AWS::WAFv2::LoggingConfiguration
+  #   Properties:
+  #     ResourceArn: !GetAtt WebAcl.Arn
+  #     LogDestinationConfigs: 
+  #       - !GetAtt WebAclLogGroup.Arn
+  #   DependsOn:
+  #     - WebAclLogGroup
+  CloudFront:
+    Type: AWS::CloudFront::Distribution
+    DependsOn:
+      - S3Bucket
+      - AcmCertificate
+    Properties:
+      Tags:
+        - Key: Application
+          Value: oms-cloudfront
+        - Key: environment
+          Value: ${self:custom.env.env_short} 
+      DistributionConfig:
+        Aliases: 
+          - ${self:custom.env.dns_domain_id.name}
+        Origins:
+          - DomainName: !GetAtt S3Bucket.DomainName
+            ConnectionAttempts: 3
+            ConnectionTimeout: 10
+            Id: CloudFrontOrigin
+            OriginAccessControlId: !GetAtt OriginAccessControl.Id
+            S3OriginConfig:
+              OriginAccessIdentity: ''
+            #     Fn::Join:
+            #       - ""
+            #       - - origin-access-identity/cloudfront/
+            #         - Ref: CloudFrontOrigin
+        Enabled: "true"
+        HttpVersion: http2and3
+        IPV6Enabled: false
+        Comment: "To host oms frontend application"
+        DefaultRootObject: index.html
+        CustomErrorResponses:
+          - ErrorCode: 404
+            ResponseCode: 200
+            ResponsePagePath: /index.html
+          - ErrorCode: 403
+            ResponseCode: 200
+            ResponsePagePath: /index.html
+            ErrorCachingMinTTL: 0
+        DefaultCacheBehavior:
+          AllowedMethods:
+            - GET
+            - HEAD
+          CachePolicyId: !Ref CachePolicy
+          Compress: true
+          TargetOriginId: CloudFrontOrigin
+          ViewerProtocolPolicy: redirect-to-https
+        ViewerCertificate:
+          AcmCertificateArn: !Ref AcmCertificate #${self:custom.env.acm.arn}
+          MinimumProtocolVersion: TLSv1.2_2021
+          SslSupportMethod: sni-only
+        WebACLId: !GetAtt WebAcl.Arn
+  CloudFrontOrigin:
+    Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
+    Properties:
+      CloudFrontOriginAccessIdentityConfig:
+        Comment: Identity for CloudFrontOrigin
+  OriginAccessControl:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      OriginAccessControlConfig: 
+        Description: Default Origin Access Control
+        Name: !GetAtt S3Bucket.DomainName
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
+  CachePolicy:
+      Type: AWS::CloudFront::CachePolicy
+      Properties:
+        CachePolicyConfig:
+          Comment: oms-frontend-cache-policy
+          DefaultTTL: 60
+          MaxTTL: 60
+          MinTTL: 1
+          Name: oms-frontend-cache-policy
+          ParametersInCacheKeyAndForwardedToOrigin:
+            CookiesConfig:
+              CookieBehavior: all
+            EnableAcceptEncodingBrotli: true
+            EnableAcceptEncodingGzip: true
+            HeadersConfig:
+              HeaderBehavior: none
+            QueryStringsConfig:
+              QueryStringBehavior: all
+
+Outputs:
+    CFDistribution: 
+      Description: Cloudfront Distribution Domain Name
+      Value: !GetAtt CloudFront.DomainName

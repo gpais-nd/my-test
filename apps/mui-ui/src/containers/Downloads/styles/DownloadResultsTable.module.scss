@@ -1,0 +1,126 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.columnHeader {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  color: #b4522e;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: left;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.downloadButton {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01071em;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 6.25rem;
+  border: none;
+  background-color: #b4522e;
+  color: white;
+
+  &:disabled {
+    background-color: lightgrey;
+    color: grey;
+    cursor: default;
+  }
+
+  &:hover {
+    background-color: #e8d1c9;
+  }
+}
+
+.tableBody {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.tableRow {
+  text-align: left;
+  &:hover {
+    background-color: #fff9f8;
+  }
+}
+
+.selected {
+  background-color: #fff9f8;
+}
+
+.tableData {
+  padding: 1rem 0;
+  width: fit-content;
+}
+
+.requestName {
+  max-width: 20rem;
+  word-wrap: break-word;
+}
+
+.status {
+  border-radius: 1.5rem;
+  color: black;
+  font-size: 14px;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  width: fit-content;
+}
+
+.posted {
+  background-color: #bedbff;
+}
+
+.in_progress {
+  background-color: #fff9c6;
+}
+
+.consolidating {
+  background-color: #ffe7d3;
+}
+
+.completed {
+  background-color: #b4ec9e;
+}
+
+.failed {
+  background-color: #ffc2a6;
+}
+
+.tableFooter {
+  padding: 1rem;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noRequests {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+
+  .message {
+    font-size: 24px;
+    color: #b4522e;
+    font-weight: bold;
+    padding: 1rem;
+  }
+
+  .subtext {
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+  }
+}

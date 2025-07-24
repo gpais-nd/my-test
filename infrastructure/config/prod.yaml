@@ -1,0 +1,8 @@
+env_short: prod
+kms:
+    kms_arn: arn:aws:kms:us-east-1:157321289635:key/02c1824b-9d18-4b7a-8617-a54986c0bafc
+dns_domain_id:
+    name: "oms.disn.io"
+    san: "*.oms.disn.io"
+# acm:
+#     arn: arn:aws:acm:us-east-1:716915692812:certificate/654b4099-19f5-42b5-8b5a-7e7493c4846c # update with prod value

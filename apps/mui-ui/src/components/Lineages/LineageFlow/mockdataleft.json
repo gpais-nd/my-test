@@ -1,0 +1,150 @@
+[
+  {
+    "data": {
+      "searchNodes": [
+        {
+          "edgeId": "f50635dc4822c502bce52691262586e1-86416c3fef4656e02cab16743a38d35d",
+          "node": {
+            "_id": "urn:oms:dataflow:(urn:oms:platform:databricks:dss-dsa-prod-us-east-1.cloud.databricks.com):828913473145042",
+            "name": "828913473145042",
+            "desc": "https://dss-dsa-prod-us-east-1.cloud.databricks.com/jobs/828913473145042=?o3066777196544896",
+            "__typename": "Dataflow"
+          },
+          "relationship": "produces",
+          "relatedNode": {
+            "_id": "urn:oms:dataset:(urn:oms:platform:s3:dataeng-data-shared-prod):ds/prod/shared/identity_ds_prod/account_sharing_sharer_score_dim",
+            "name": "s3://dataeng-data-shared-prod/ds/prod/shared/identity_ds_prod/account_sharing_sharer_score_dim",
+            "desc": "s3://dataeng-data-shared-prod/ds/prod/shared/identity_ds_prod/account_sharing_sharer_score_dim",
+            "__typename": "Dataset"
+          },
+          "__typename": "NodeLineage"
+        },
+        {
+          "edgeId": "e06dfbc03055838595611751b87d9941-50fd2bc4b672d37f5e8da0aa53bce75c",
+          "node": {
+            "_id": "urn:oms:dataflow:(urn:oms:platform:databricks:dss-dsa-prod-us-east-1.cloud.databricks.com):894136312626162",
+            "name": "894136312626162",
+            "desc": "https://dss-dsa-prod-us-east-1.cloud.databricks.com/jobs/894136312626162=?o3066777196544896",
+            "__typename": "Dataflow"
+          },
+          "relationship": "consumes",
+          "relatedNode": {
+            "_id": "urn:oms:dataset:(urn:oms:platform:s3:dataeng-data-shared-prod):ds/prod/shared/identity_ds_prod/account_sharing_sharer_score_dim",
+            "name": "s3://dataeng-data-shared-prod/ds/prod/shared/identity_ds_prod/account_sharing_sharer_score_dim",
+            "desc": "s3://dataeng-data-shared-prod/ds/prod/shared/identity_ds_prod/account_sharing_sharer_score_dim",
+            "__typename": "Dataset"
+          },
+          "__typename": "NodeLineage"
+        },
+        {
+          "edgeId": "11f66192faf39919c383e5daeb124a77-50fd2bc4b672d37f5e8da0aa53bce75c",
+          "node": {
+            "_id": "urn:oms:dataflow:(urn:oms:platform:databricks:dss-dsa-prod-us-east-1.cloud.databricks.com):894136312626162",
+            "name": "894136312626162",
+            "desc": "https://dss-dsa-prod-us-east-1.cloud.databricks.com/jobs/894136312626162=?o3066777196544896",
+            "__typename": "Dataflow"
+          },
+          "relationship": "produces",
+          "relatedNode": {
+            "_id": "urn:oms:dataset:(urn:oms:platform:s3:dataeng-data-shared-prod):ds/prod/stage/identity_ds_stage_prod/account_sharing_karnak_clusters",
+            "name": "s3://dataeng-data-shared-prod/ds/prod/stage/identity_ds_stage_prod/account_sharing_karnak_clusters",
+            "desc": "s3://dataeng-data-shared-prod/ds/prod/stage/identity_ds_stage_prod/account_sharing_karnak_clusters",
+            "__typename": "Dataset"
+          },
+          "__typename": "NodeLineage"
+        },
+        {
+          "edgeId": "0fe3d660efe84f193339110817287837-466b12c372225c2109161e0daa6d7ca5",
+          "node": {
+            "_id": "urn:oms:dataflow:(urn:oms:platform:databricks:dss-dsa-prod-us-east-1.cloud.databricks.com):894136312626162",
+            "name": "894136312626162",
+            "desc": "https://dss-dsa-prod-us-east-1.cloud.databricks.com/jobs/894136312626162=?o3066777196544896",
+            "__typename": "Dataflow"
+          },
+          "relationship": "consumes",
+          "relatedNode": {
+            "_id": "urn:oms:dataset:(urn:oms:platform:s3:dataeng-data-shared-prod):ds/prod/shared/identity_ds_prod/account_sharing_sharer_score_dim",
+            "name": "s3://dataeng-data-shared-prod/ds/prod/shared/identity_ds_prod/account_sharing_sharer_score_dim",
+            "desc": "s3://dataeng-data-shared-prod/ds/prod/shared/identity_ds_prod/account_sharing_sharer_score_dim",
+            "__typename": "Dataset"
+          },
+          "__typename": "NodeLineage"
+        },
+        {
+          "edgeId": "090396c4361e16bb1a903469bf63acc1-466b12c372225c2109161e0daa6d7ca5",
+          "node": {
+            "_id": "urn:oms:dataflow:(urn:oms:platform:databricks:dss-dsa-prod-us-east-1.cloud.databricks.com):894136312626162",
+            "name": "894136312626162",
+            "desc": "https://dss-dsa-prod-us-east-1.cloud.databricks.com/jobs/894136312626162=?o3066777196544896",
+            "__typename": "Dataflow"
+          },
+          "relationship": "produces",
+          "relatedNode": {
+            "_id": "urn:oms:dataset:(urn:oms:platform:s3:dataeng-data-shared-prod):ds/prod/stage/identity_ds_stage_prod/account_sharing_karnak_clusters",
+            "name": "s3://dataeng-data-shared-prod/ds/prod/stage/identity_ds_stage_prod/account_sharing_karnak_clusters",
+            "desc": "s3://dataeng-data-shared-prod/ds/prod/stage/identity_ds_stage_prod/account_sharing_karnak_clusters",
+            "__typename": "Dataset"
+          },
+          "__typename": "NodeLineage"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "searchNodes": [
+        {
+          "edgeId": "2df6811ed843d8de23b5bfc852609a96-72b09bd49c8aba0e9d6535280d4307ae",
+          "node": {
+            "_id": "urn:oms:dataflow:(urn:oms:platform:airflow:airflow.disneystreaming.com):account_sharing_sharer_score_load",
+            "name": "account_sharing_sharer_score_load",
+            "desc": "https://airflow.disneystreaming.com/dags/account_sharing_sharer_score_load/grid",
+            "__typename": "Dataflow"
+          },
+          "relationship": "triggers",
+          "relatedNode": {
+            "_id": "urn:oms:dataflow:(urn:oms:platform:databricks:dss-dsa-prod-us-east-1.cloud.databricks.com):828913473145042",
+            "name": "828913473145042",
+            "desc": "https://dss-dsa-prod-us-east-1.cloud.databricks.com/jobs/828913473145042=?o3066777196544896",
+            "__typename": "Dataflow"
+          },
+          "__typename": "NodeLineage"
+        },
+        {
+          "edgeId": "29be3a4f785bfb36c5a3930d112abb75-5c7784271a900e6ef41853d79c0ffe13",
+          "node": {
+            "_id": "urn:oms:dataflow:(urn:oms:platform:airflow:airflow.disneystreaming.com):account_sharing_sharer_score_backfill",
+            "name": "account_sharing_sharer_score_backfill",
+            "desc": "https://airflow.disneystreaming.com/dags/account_sharing_sharer_score_backfill/grid",
+            "__typename": "Dataflow"
+          },
+          "relationship": "triggers",
+          "relatedNode": {
+            "_id": "urn:oms:dataflow:(urn:oms:platform:databricks:dss-dsa-prod-us-east-1.cloud.databricks.com):828913473145042",
+            "name": "828913473145042",
+            "desc": "https://dss-dsa-prod-us-east-1.cloud.databricks.com/jobs/828913473145042=?o3066777196544896",
+            "__typename": "Dataflow"
+          },
+          "__typename": "NodeLineage"
+        },
+        {
+          "edgeId": "f50635dc4822c502bce52691262586e1-86416c3fef4656e02cab16743a38d35d",
+          "node": {
+            "_id": "urn:oms:dataflow:(urn:oms:platform:databricks:dss-dsa-prod-us-east-1.cloud.databricks.com):828913473145042",
+            "name": "828913473145042",
+            "desc": "https://dss-dsa-prod-us-east-1.cloud.databricks.com/jobs/828913473145042=?o3066777196544896",
+            "__typename": "Dataflow"
+          },
+          "relationship": "produces",
+          "relatedNode": {
+            "_id": "urn:oms:dataset:(urn:oms:platform:s3:dataeng-data-shared-prod):ds/prod/shared/identity_ds_prod/account_sharing_sharer_score_dim",
+            "name": "s3://dataeng-data-shared-prod/ds/prod/shared/identity_ds_prod/account_sharing_sharer_score_dim",
+            "desc": "s3://dataeng-data-shared-prod/ds/prod/shared/identity_ds_prod/account_sharing_sharer_score_dim",
+            "__typename": "Dataset"
+          },
+          "__typename": "NodeLineage"
+        }
+      ]
+    }
+  }
+]

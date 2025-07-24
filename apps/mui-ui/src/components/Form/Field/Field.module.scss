@@ -1,0 +1,29 @@
+.field {
+  input {
+    border-radius: 0.5rem;
+    border: 0.5px solid var(--light-theme-neutral-border-weak, #bbb);
+    background: var(--light-theme-neutral-background-inverted, #fff);
+    box-shadow: 0px 1px 3px 1px rgba(41, 59, 75, 0.1),
+      0px 1px 2px 0px rgba(41, 59, 75, 0.1);
+    padding-left: 1rem;
+    width: 100%;
+  }
+
+  .input {
+    position: relative;
+  }
+
+  .customInputIcon {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding-right: 0.75rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+}

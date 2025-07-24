@@ -1,0 +1,28 @@
+.gridContainer {
+  padding: 1rem;
+}
+
+.structTable {
+  table {
+    border: 1px solid var(--brown-95);
+
+    .structFieldHeader {
+      font-weight: 500;
+    }
+
+    tr:first-child {
+      height: 2rem !important;
+    }
+
+    th {
+      background: #fefefe !important;
+      border: px solid #fff9f8;
+      color: #666;
+    }
+
+    td {
+      background: #fefefe !important;
+      color: #666;
+    }
+  }
+}

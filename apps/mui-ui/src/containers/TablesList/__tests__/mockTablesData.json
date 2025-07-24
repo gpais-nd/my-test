@@ -1,0 +1,63 @@
+{
+  "data": {
+    "getAssets": {
+      "row_count": "37",
+      "assets": [
+        {
+          "dataSource": "DeltaLake",
+          "sourceSpecificMetadata": {
+            "DeltaLake": {
+              "location": null,
+              "partition": null,
+              "table_id": null
+            }
+          },
+          "technicalMetadata": null,
+          "businessMetadata": {
+            "asset_id": "c731ca20-423d-4d7a-86f6-a3117ab03dff",
+            "asset_name": "sample_delta_table",
+            "classification": null,
+            "owner": null,
+            "descriptiveMetadata": {
+              "description": null
+            },
+            "administrativeMetadata": null
+          }
+        },
+        {
+          "dataSource": "DeltaLake",
+          "sourceSpecificMetadata": {
+            "DeltaLake": {
+              "location": null,
+              "partition": null,
+              "table_id": null
+            }
+          },
+          "technicalMetadata": null,
+          "businessMetadata": {
+            "asset_id": "1400054a-a46f-4d1f-8779-5c77f5fa7eeb",
+            "asset_name": "eva_alid_saved_snapshot",
+            "classification": null,
+            "owner": null,
+            "descriptiveMetadata": {
+              "description": null
+            },
+            "administrativeMetadata": null
+          }
+        }
+      ],
+      "aggregations": {
+        "database_aggregation": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": []
+        },
+        "app_aggregation": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": []
+        }
+      }
+    }
+  }
+}

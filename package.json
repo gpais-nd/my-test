@@ -1,0 +1,50 @@
+{
+  "name": "metastore-ui",
+  "version": "0.1.1",
+  "packageManager": "yarn@3.2.0",
+  "private": true,
+  "devDependencies": {
+    "husky": "4.2.3",
+    "lerna": "3.22.1"
+  },
+  "engines": {
+    "node": "=18.12.1"
+  },
+  "scripts": {
+    "launch": "./node_modules/.bin/lerna run start --parallel",
+    "start": "scp apps/mui-ui/.env.prod apps/mui-ui/.env && npm run launch",
+    "start:dev": "scp apps/mui-ui/.env.dev apps/mui-ui/.env && npm run launch",
+    "start:sandbox": "scp apps/mui-ui/.env.sandbox apps/mui-ui/.env && npm run launch",
+    "build": "./node_modules/.bin/lerna run build --stream",
+    "lint": "./node_modules/.bin/lerna run lint --stream",
+    "fix": "./node_modules/.bin/lerna run fix --stream",
+    "test": "./node_modules/.bin/lerna run test --stream",
+    "test:ui:coverage": "yarn workspace @metastore/ui test:coverage",
+    "test:api:coverage": "yarn workspace @mcm/api test:coverage",
+    "test:coverage": "./node_modules/npm/lerna run test:coverage --stream",
+    "test:storybook:script": "yarn workspace @metastore/ui test:storybook:script",
+    "storybook": "yarn workspace @metastore/ui storybook",
+    "build-storybook": "yarn workspace @metastore/ui build-storybook",
+    "serve-storybook": "yarn workspace @metastore/ui serve-storybook",
+    "test-storybook": "yarn workspace @metastore/ui test:storybook",
+    "test-storybook-parallel": "yarn workspace @metastore/ui test-storybook-parallel",
+    "clean": "./node_modules/.bin/lerna clean -y && rm -rf node_modules"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lerna run --concurrency 1 --stream precommit"
+    }
+  },
+  "resolutions": {
+    "typescript": "5.7.3"
+  },
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "services/*"
+    ]
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13"
+  }
+}

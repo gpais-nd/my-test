@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  justify-content: center;
+  padding: 0 1.56rem;
+
+  .homeLink {
+    width: 20rem;
+  }
+}
+
+.primary {
+  background: linear-gradient(180deg, #0a193c -19.15%, #71afc0 61.6%);
+}
+
+.secondary {
+  background: linear-gradient(180deg, #0a193c -19.15%, #71afc0 61.6%);
+  height: 5.125rem;
+}
+
+.avatarContainer {
+  position: absolute;
+  right: 1.56rem;
+}

@@ -1,0 +1,151 @@
+.downloadButton {
+  margin-left: 11rem;
+  margin-top: 0.4rem;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+}
+
+.graphMap {
+  position: relative;
+
+  .loading {
+    color: #bbb;
+    font-weight: 600;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    z-index: 12;
+  }
+
+  .viewport {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    .tooltc {
+      visibility: hidden;
+    }
+
+    .toolt:hover .tooltc {
+      visibility: visible;
+    }
+
+    .workspace {
+      cursor: grab;
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+
+      .vertexContainer {
+        .vertex {
+          display: flex;
+          font-size: 0.5rem;
+          justify-content: space-between;
+          height: 100%;
+          position: absolute;
+          width: 100%;
+
+          .content {
+            flex-grow: 1;
+            overflow: hidden;
+            padding: 0 0.4375rem;
+
+            div {
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+
+          .Datajob {
+            circle {
+              fill: #FFC39F;
+            }
+
+            path {
+              fill: #FFFFFF;
+            }
+
+            & :hover {
+              circle {
+                fill: #E8D1C9;
+              }
+            }
+          }
+
+          .Datajob_selected {
+            circle {
+              fill: #FFFFFF;
+              stroke: #FFC39F;
+            }
+
+            path {
+              fill: #FFC39F;
+            }
+
+            & :hover {
+              circle {
+                fill: #E8D1C9;
+              }
+
+              path {
+                fill: #1C1B1F;
+              }
+            }
+          }
+
+          .Datajob_loader {
+            background: #FFC39F;
+          }
+        }
+
+        .vertexGrouped {
+          height: 2rem !important;
+          margin-left: -0.75rem;
+          width: 110.8%;
+        }
+
+        .vertexGrouped::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 90.3%;
+        }
+
+        .vertexSingleNode {
+          height: 100% !important;
+          margin-left: -0.75rem;
+          width: 110.8%;
+        }
+
+        .vertexSingleNode::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 90.3%;
+        }
+
+        .vertexDetails {
+          background: white;
+          border: 1px solid #71AFC0;
+          border-radius: 0.25rem;
+          font-size: 0.5rem;
+          padding: 1.8rem 0.5rem 0.5rem 0.7rem;
+
+          .detailsValue {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tooltip {
+  font-size: 1rem;
+  width: auto;
+}

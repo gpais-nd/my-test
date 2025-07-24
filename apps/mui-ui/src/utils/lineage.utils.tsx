@@ -1,0 +1,45 @@
+export enum QueryTypeEnum {
+  TABLE = 'TABLE',
+  QUERY = 'QUERY',
+  COLUMN = 'COLUMN',
+  CLONED = 'CLONED',
+  USER = 'USER',
+  CW = 'CW',
+  JOB = 'JOB',
+  PIPELINE = 'PIPELINE',
+  WIDGET = 'WIDGET',
+  DASHBOARD = 'DASHBOARD',
+}
+
+export enum RelationTypeEnum {
+  DOWNSTREAM = 'DOWNSTREAM',
+  AF_DOWNSTREAM = 'AF_DOWNSTREAM',
+  CREATES = 'CREATES',
+  TRIGGERS = 'TRIGGERS',
+  UPSTREAM = 'UPSTREAM',
+  TU_DOWNSTREAM = 'TU_DOWNSTREAM',
+  REFERS = 'REFERS',
+  COLUMN = 'DOWNSTREAM_COLUMN',
+  ACCESSED = 'ACCESSED',
+  CLONED = 'CLONED_FROM',
+  CW = 'CW_DOWNSTREAM',
+  CW_VIRTUAL = 'CW_DOWNSTREAM_VIRTUAL',
+}
+
+export enum NodeTypeEnum {
+  Dataset = 'Dataset',
+  Datajob = 'Datajob',
+  Dataflow = 'Dataflow',
+  Pipeline = 'Pipeline',
+  Platform = 'Platform',
+  Compute = 'Compute',
+  Owner = 'Owner',
+  Field = 'Field',
+  Dashboard = 'Dashboard',
+  Widget = 'Widget',
+  DataQuery = 'DataQuery',
+  Alert = 'Alert',
+  Incident = 'Incident',
+  MLRegistry = 'MLRegistry',
+  MLModel = 'MLModel',
+}

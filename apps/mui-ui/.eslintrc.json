@@ -1,0 +1,39 @@
+{
+  "extends": ["./node_modules/gts/", "plugin:react/recommended"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "plugins": ["react-hooks", "jsx-a11y"],
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-useless-catch": "off",
+    "node/no-extraneous-import": "off",
+    "node/no-unpublished-import": "off",
+    "node/no-missing-require": "off",
+    "prefer-const": "off",
+    "no-constant-condition": "off",
+    "no-sparse-arrays": "off",
+    "no-empty": "off",
+    "import/first": "off",
+    "react/no-unescaped-entities": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/jsx-key": "off",
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "no-case-declarations": "off",
+    "react/no-children-prop": "off",
+    "no-prototype-builtins": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "eqeqeq": "off",
+    "node/no-unpublished-require": "off",
+    "prettier/prettier": ["error", {"endOfLine": "auto"}],
+    "react/react-in-jsx-scope": "off" // suppress errors for missing 'import React' in files
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

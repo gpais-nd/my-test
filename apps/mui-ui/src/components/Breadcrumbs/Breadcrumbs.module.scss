@@ -1,0 +1,21 @@
+.breadcrumbs {
+  align-items: center;
+  display: flex;
+  margin-right: 1rem;
+  
+  svg {
+    fill: var(--brown-50);
+    padding-top: 0.1875rem;
+  }
+
+  .link {
+    color: var(--brown-50);
+    font-weight: 600;
+    line-height: 1.125rem;
+    text-decoration: underline;
+  }
+
+  .linkText {
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "oms-ui-infrastructure",
+  "version": "0.0.1",
+  "scripts": {
+    "print": "serverless print --stage $ENVIRONMENT",
+    "deploy": "serverless deploy --stage $ENVIRONMENT",
+    "logs": "serverless logs --stage $ENVIRONMENT"
+  },
+  "author": "oms-developers@disneystreaming.com",
+  "dependencies": {
+    "serverless": "3.34.0",
+    "serverless-cloudformation-changesets": "^0.0.2",
+    "serverless-plugin-diff": "^3.0.0",
+    "serverless-s3-sync": "^3.2.0"
+  },
+  "devDependencies": {
+    "serverless-deployment-bucket": "^1.6.0",
+    "serverless-plugin-diff": "^3.0.0",
+    "serverless-plugin-resource-tagging": "^1.2.0",
+    "serverless-step-functions": "^3.14.0"
+  }
+}

@@ -89,6 +89,7 @@
     "@types/react-table": "^7.7.14",
     "@types/react-toggle": "^4.0.3",
     "@types/styled-components": "^5.1.26",
+    "eslint": "8.57.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "4.2.3",
@@ -119,7 +120,7 @@
     ]
   },
   "scripts": {
-    "precommit": "gts lint",
+    "precommit": "yarn gts lint",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --no-cache --silent",
@@ -127,7 +128,7 @@
     "test:coverage": "jest --no-cache --coverage",
     "test:coverage:summary": "jest --no-cache --coverage --coverageReporters=\"text-summary\"",
     "test:watch:coverage": "jest --no-cache --coverage --watch",
-    "lint": "gts lint",
+    "lint": "yarn gts lint",
     "clean": "gts clean",
     "compile": "tsc",
     "fix": "gts fix",

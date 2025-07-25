@@ -8,7 +8,7 @@ describe('PartitionColumns tests', () => {
     expect(screen.getByText('Partition Columns')).toBeInTheDocument();
     expect(
       screen.getByText(
-        'Always include a partition column predicate when querying this table, e.g.:'
+        'Always include a partition column predicate when querying this table'
       )
     ).toBeInTheDocument();
     expect(screen.getByText(/SELECT/)).toBeInTheDocument();

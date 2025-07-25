@@ -11,10 +11,10 @@ import { FetchResult, useMutation } from '@apollo/client';
 import { REQUEST_LINEAGE_REPORT } from 'containers/TableDetails/controllers/query';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'sideEffects/reducers';
-import { toastMessage } from 'utils';
+import { toastMessage } from '../../utils';
 import { ReactComponent as SubmittedIcon } from './images/submittedIcon.svg';
 import { ReactComponent as CSVIcon } from './images/csvIcon.svg';
-import { uploadAssetToS3 } from 'hooks/useAwsRequests';
+import { uploadAssetToS3 } from '../../hooks/useAwsRequests';
 import { TextField } from '@mui/material';
 
 const BulkDownload: React.FC = () => {

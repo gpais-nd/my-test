@@ -12,7 +12,7 @@ import {
   CognitoIdentityCredentials,
   fromCognitoIdentityPool,
 } from '@aws-sdk/credential-provider-cognito-identity';
-import { startDatadog } from 'sideEffects/services/Datadog';
+import { startDatadog } from '../sideEffects/services/Datadog';
 
 const REGION = process.env.REACT_APP_GRAPHQL_REGION;
 const IDENTITY_POOL_ID = process.env.REACT_APP_IDENTITY_POOL_ID || '';

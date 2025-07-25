@@ -7,7 +7,7 @@ import {
   Grid,
   IconButton,
 } from '@mui/material';
-import { downloadAssetFromS3 } from 'hooks/useAwsRequests';
+import { downloadAssetFromS3 } from '../../hooks/useAwsRequests';
 import React from 'react';
 import { RequestDetailsProps, Status } from './download.utils';
 import styles from './styles/DownloadResultsDialog.module.scss';

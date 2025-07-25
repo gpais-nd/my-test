@@ -7,7 +7,7 @@ import {
   SelectChangeEvent,
 } from '@mui/material';
 import { Loader } from 'components/Loader';
-import { downloadAssetFromS3 } from 'hooks/useAwsRequests';
+import { downloadAssetFromS3 } from '../../hooks/useAwsRequests';
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from 'sideEffects/reducers';

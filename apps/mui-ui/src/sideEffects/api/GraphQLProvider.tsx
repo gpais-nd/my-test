@@ -3,7 +3,7 @@ import { useGraphQL } from './useGraphQL';
 import { ApolloProvider } from '@apollo/client';
 import { useDispatch } from 'react-redux';
 import { Loader } from '../../components/Loader';
-import { toastMessage } from 'utils';
+import { toastMessage } from '../../utils';
 
 interface Props {
   children: ReactElement;

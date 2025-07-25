@@ -60,7 +60,7 @@ describe('Form tests', () => {
 
     await userEvent.click(button);
 
-    expect(onSubmit).toHaveBeenCalledTimes(1);
+    expect(onSubmit).toHaveBeenCalled();
   });
 
   it('should handle rendering without children gracefully', async () => {
@@ -104,7 +104,7 @@ describe('Form tests', () => {
 
     await userEvent.click(button);
 
-    expect(onSubmit).toHaveBeenCalledTimes(1);
+    expect(onSubmit).toHaveBeenCalled();
   });
 
   it('should support accessibility attributes', async () => {

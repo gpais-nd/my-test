@@ -7,9 +7,10 @@ interface Props {
   title: string;
   dataSourceName: string;
   actions?: ReactElement[];
+  'aria-label'?: string;
 }
 
-const DetailsTitle: FC<Props> = ({ title, dataSourceName, actions }) => {
+const DetailsTitle: FC<Props> = ({ title, dataSourceName, actions, 'aria-label': ariaLabel }) => {
   let decodedUri = title;
 
   try {
@@ -19,7 +20,10 @@ const DetailsTitle: FC<Props> = ({ title, dataSourceName, actions }) => {
   }
 
   return (
-    <div className={styles.detailsTitle}>
+    <div
+      className={styles.detailsTitle}
+      {...(ariaLabel ? { 'aria-label': ariaLabel } : {})}
+    >
       <Breadcrumbs path={`/dataSource/${dataSourceName}`} />
       <div className={styles.title}>{decodedUri}</div>
       <ActionComponents

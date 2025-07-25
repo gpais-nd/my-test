@@ -50,9 +50,11 @@ describe('GridHeader tests', () => {
     expect(onSortColumn).toHaveBeenCalledTimes(1);
 
     expect(onSortColumn).toHaveBeenCalledWith(
-      'name',
-      SortDirection.ASC,
-      'remoteName'
+      expect.objectContaining({
+        name: 'name',
+        sortDirection: SortDirection.ASC,
+        remoteSortField: 'remoteName',
+      })
     );
   });
 
@@ -76,9 +78,11 @@ describe('GridHeader tests', () => {
     await userEvent.click(nameHeader);
     expect(onSortColumn).toHaveBeenCalledTimes(1);
     expect(onSortColumn).toHaveBeenCalledWith(
-      'name',
-      SortDirection.ASC,
-      'remoteName'
+      expect.objectContaining({
+        name: 'name',
+        sortDirection: SortDirection.ASC,
+        remoteSortField: 'remoteName',
+      })
     );
   });
 
@@ -102,9 +106,11 @@ describe('GridHeader tests', () => {
     await userEvent.click(nameHeader);
     expect(onSortColumn).toHaveBeenCalledTimes(1);
     expect(onSortColumn).toHaveBeenCalledWith(
-      'name',
-      SortDirection.DESC,
-      'remoteName'
+      expect.objectContaining({
+        name: 'name',
+        sortDirection: SortDirection.DESC,
+        remoteSortField: 'remoteName',
+      })
     );
   });
 
@@ -128,9 +134,11 @@ describe('GridHeader tests', () => {
     await userEvent.click(nameHeader);
     expect(onSortColumn).toHaveBeenCalledTimes(1);
     expect(onSortColumn).toHaveBeenCalledWith(
-      'name',
-      SortDirection.NONE,
-      'remoteName'
+      expect.objectContaining({
+        name: 'name',
+        sortDirection: SortDirection.NONE,
+        remoteSortField: 'remoteName',
+      })
     );
   });
 });

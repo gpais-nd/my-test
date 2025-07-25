@@ -12,22 +12,22 @@ describe('Dropdown tests', () => {
     expect(screen.getByText('Select...')).toBeInTheDocument();
   });
 
-  it('should display options when clicked', () => {
+  it('should display options when clicked', async () => {
     render(<Dropdown options={defaultOptions} />);
     const dropdown = screen.getByText('Select...');
-    fireEvent.click(dropdown);
+    fireEvent.mouseDown(dropdown); // react-select prefers mouseDown
 
-    expect(screen.getByText('Option 1')).toBeInTheDocument();
-    expect(screen.getByText('Option 2')).toBeInTheDocument();
+    expect(await screen.findByText('Option 1')).toBeInTheDocument();
+    expect(await screen.findByText('Option 2')).toBeInTheDocument();
   });
 
-  it('should call onChange when an option is selected', () => {
+  it('should call onChange when an option is selected', async () => {
     const onChange = jest.fn();
     render(<Dropdown options={defaultOptions} onChange={onChange} />);
     const dropdown = screen.getByText('Select...');
-    fireEvent.click(dropdown);
+    fireEvent.mouseDown(dropdown);
 
-    const option = screen.getByText('Option 1');
+    const option = await screen.findByText('Option 1');
     fireEvent.click(option);
 
     expect(onChange).toHaveBeenCalledWith({ value: '1', label: 'Option 1' });

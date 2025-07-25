@@ -32,7 +32,7 @@ describe('Toast tests', () => {
     expect(onClose).toHaveBeenCalledTimes(1);
   });
 
-  it('should hide the close button if timeout is passed', async () => {
+  it('should always show the close button, even if timeout is passed', async () => {
     const toastMessage: ToastMessage = {
       id: 12345,
       content: 'Hello toast',
@@ -42,6 +42,6 @@ describe('Toast tests', () => {
 
     render(<Toast toastMessage={toastMessage} onClose={jest.fn()} />);
 
-    expect(screen.queryByTestId('toastCloseButton')).not.toBeInTheDocument();
+    expect(screen.getByTestId('toastCloseButton')).toBeInTheDocument();
   });
 });

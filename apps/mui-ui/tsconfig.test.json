@@ -25,7 +25,8 @@
       "utils/*": ["utils/*"],
       "contexts/*": ["contexts/*"],
       "containers/*": ["containers/*"],
-      "assets/*": ["assets/*"]
+      "assets/*": ["assets/*"],
+      "config/*": ["config/*"]
     },
     "lib": [
       "dom",

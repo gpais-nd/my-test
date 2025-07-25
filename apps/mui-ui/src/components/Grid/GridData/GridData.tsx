@@ -9,9 +9,15 @@ interface Props<T extends GenericGridRow> {
 const GridData = <T extends GenericGridRow>({ headers, data }: Props<T>) => {
   return (
     <tbody>
-      {data.map(record => (
-        <GridDataRow key={record.id} headers={headers} record={record} />
-      ))}
+      {data.length === 0 ? (
+        <tr>
+          <td colSpan={headers.length} style={{ textAlign: 'center' }}>No data available</td>
+        </tr>
+      ) : (
+        data.map(record => (
+          <GridDataRow key={record.id} headers={headers} record={record} />
+        ))
+      )}
     </tbody>
   );
 };

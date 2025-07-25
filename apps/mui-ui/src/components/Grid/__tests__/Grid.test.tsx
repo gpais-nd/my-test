@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, within } from '@testing-library/react';
 import { Grid } from '../index';
 import { GridColumnHeader } from '../types';
 
@@ -27,10 +27,23 @@ describe('Grid tests', () => {
       screen.getByRole('columnheader', { name: 'Age' })
     ).toBeInTheDocument();
 
-    const rows = screen.getAllByRole('row');
-    expect(rows[1]).toHaveTextContent('JohnDoe20');
-    expect(rows[2]).toHaveTextContent('JaneSmith30');
-    expect(rows[3]).toHaveTextContent('MaryJohnson40');
+
+    // Get all rowgroups (thead and tbody), tbody is the second one
+    const rowgroups = screen.getAllByRole('rowgroup');
+    const tbody = rowgroups[1];
+    const dataRows = within(tbody).getAllByRole('row');
+    // Row 1: John Doe 20
+    expect(within(dataRows[0]).getByText('John')).toBeInTheDocument();
+    expect(within(dataRows[0]).getByText('Doe')).toBeInTheDocument();
+    expect(within(dataRows[0]).getByText('20')).toBeInTheDocument();
+    // Row 2: Jane Smith 30
+    expect(within(dataRows[1]).getByText('Jane')).toBeInTheDocument();
+    expect(within(dataRows[1]).getByText('Smith')).toBeInTheDocument();
+    expect(within(dataRows[1]).getByText('30')).toBeInTheDocument();
+    // Row 3: Mary Johnson 40
+    expect(within(dataRows[2]).getByText('Mary')).toBeInTheDocument();
+    expect(within(dataRows[2]).getByText('Johnson')).toBeInTheDocument();
+    expect(within(dataRows[2]).getByText('40')).toBeInTheDocument();
 
     expect(screen.getByText('Showing 1 - 3 of 3 results')).toBeInTheDocument();
   });
@@ -94,9 +107,21 @@ describe('Grid tests', () => {
     const ageHeader = screen.getByRole('columnheader', { name: 'Age' });
     fireEvent.click(ageHeader);
 
-    const rows = screen.getAllByRole('row');
-    expect(rows[1]).toHaveTextContent('JohnDoe20');
-    expect(rows[2]).toHaveTextContent('JaneSmith30');
-    expect(rows[3]).toHaveTextContent('MaryJohnson40');
+    // Get all rowgroups (thead and tbody), tbody is the second one
+    const rowgroups = screen.getAllByRole('rowgroup');
+    const tbody = rowgroups[1];
+    const dataRows = within(tbody).getAllByRole('row');
+    // Row 1: John Doe 20
+    expect(within(dataRows[0]).getByText('John')).toBeInTheDocument();
+    expect(within(dataRows[0]).getByText('Doe')).toBeInTheDocument();
+    expect(within(dataRows[0]).getByText('20')).toBeInTheDocument();
+    // Row 2: Jane Smith 30
+    expect(within(dataRows[1]).getByText('Jane')).toBeInTheDocument();
+    expect(within(dataRows[1]).getByText('Smith')).toBeInTheDocument();
+    expect(within(dataRows[1]).getByText('30')).toBeInTheDocument();
+    // Row 3: Mary Johnson 40
+    expect(within(dataRows[2]).getByText('Mary')).toBeInTheDocument();
+    expect(within(dataRows[2]).getByText('Johnson')).toBeInTheDocument();
+    expect(within(dataRows[2]).getByText('40')).toBeInTheDocument();
   });
 });

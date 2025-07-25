@@ -55,6 +55,9 @@ const GridHeader: FC<Props> = ({
     }
   };
 
+  if (!headers || headers.length === 0) {
+    return null;
+  }
   return (
     <thead
       className={stickyFromTop !== undefined ? 'defaultSticky' : undefined}

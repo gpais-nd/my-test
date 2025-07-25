@@ -20,7 +20,7 @@ export interface Pagination {
   offset: number;
 }
 
-interface Props<T extends GenericGridRow> {
+interface Props<T extends GenericGridRow> extends React.HTMLAttributes<HTMLTableElement> {
   headers?: GridColumnHeader[];
   data: T[];
   actionComponents?: ReactElement[];
@@ -76,6 +76,7 @@ const Grid = <T extends GenericGridRow>({
   onSortColumnHeader,
   collapsibleRows = false,
   noBorderLine = false,
+  ...rest
 }: Props<T>) => {
   const [activePage, setActivePage] = useState(
     serverSideMode && currentPage ? currentPage : 1
@@ -182,7 +183,7 @@ const Grid = <T extends GenericGridRow>({
         )}
         {headers && (
           <div className={styles.tableContainer}>
-            <table>
+            <table {...rest}>
               <GridHeader
                 headers={columnHeaders}
                 onSortColumn={handleSortColumnHeader}

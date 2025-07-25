@@ -9,7 +9,7 @@ const renderComponent = (component: ReactElement) => {
 };
 
 describe('Select tests', () => {
-  it('should render a default select component', async () => {
+  it('should render a select component with the provided value', async () => {
     renderComponent(
       <Select
         name="selector"
@@ -19,8 +19,8 @@ describe('Select tests', () => {
         value={{ label: '1' }}
       />
     );
-
-    expect(screen.getByText('Select...')).toBeInTheDocument();
+    // Check for the value label instead of placeholder
+    expect(screen.getByText('1')).toBeInTheDocument();
   });
 
   it('should select one of the available options', async () => {
@@ -42,8 +42,10 @@ describe('Select tests', () => {
     const select = screen.getByRole('combobox', { name: 'Test Selector' });
 
     await act(async () => await userEvent.click(select));
-    await act(async () => userEvent.click(screen.getByText('One')));
-
+    // There may be multiple 'One', so select the one in the dropdown
+    const options = screen.getAllByText('One');
+    // The dropdown option is usually the last one
+    await act(async () => userEvent.click(options[options.length - 1]));
     expect(screen.getByText('One')).toBeInTheDocument();
   });
 });

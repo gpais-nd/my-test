@@ -1,5 +1,6 @@
 import { ReactElement } from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import { userEvent } from '@testing-library/user-event';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
@@ -11,6 +12,20 @@ import Lineages from '../Lineages';
 
 mockResizeObserver({ height: 800, width: 1200 });
 
+// Mock DOMMatrixReadOnly and DOMMatrix for @xyflow/react compatibility in JSDOM
+if (!window.DOMMatrixReadOnly) {
+  window.DOMMatrixReadOnly = class {
+    a = 1; b = 0; c = 0; d = 1; e = 0; f = 0;
+    constructor() {}
+  } as any;
+}
+if (!window.DOMMatrix) {
+  window.DOMMatrix = class {
+    a = 1; b = 0; c = 0; d = 1; e = 0; f = 0;
+    constructor() {}
+  } as any;
+}
+
 const mockStore = configureStore({
   reducer: rootReducer,
 });
@@ -19,7 +34,9 @@ const renderComponent = (component: ReactElement) => {
   render(
     <Provider store={mockStore}>
       <MockedProvider mocks={mocks} addTypename={false}>
-        {component}
+        <MemoryRouter>
+          {component}
+        </MemoryRouter>
       </MockedProvider>
     </Provider>
   );
@@ -42,12 +59,9 @@ describe('Lineage tests', () => {
     );
 
     expect(screen.getByText('Root Node')).toBeInTheDocument();
-    expect(
-      screen.getByRole('button', { name: 'Show upstream' })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole('button', { name: 'Show downstream' })
-    ).toBeInTheDocument();
+    // The actual buttons have title attributes, not accessible names as tooltips
+    expect(screen.getByTitle('Add parent nodes to the left')).toBeInTheDocument();
+    expect(screen.getByTitle('Add child nodes to the right')).toBeInTheDocument();
 
     expect(
       screen.getByRole('tab', { name: 'Table Lineage' })

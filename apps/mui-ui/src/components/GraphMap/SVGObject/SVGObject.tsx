@@ -1,7 +1,7 @@
 import { useRef, useEffect, FC, ReactElement } from 'react';
 import { Geometry } from '../GraphMap.types';
 import SafariWrapper from '../VertexNode/SafariWrapper';
-import { useSVGTracker } from 'hooks/useSvgCounter';
+import { useSVGTracker } from '../../../hooks/useSvgCounter';
 
 interface Props {
   id?: string;

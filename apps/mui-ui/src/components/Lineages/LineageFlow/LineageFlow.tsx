@@ -77,7 +77,7 @@ import { LineageDownloadDirection } from 'containers/Downloads/download.utils';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'sideEffects/reducers';
 import DownloadDialog from '../LineageViewer/DownloadDialog/DownloadDialog';
-import { toastMessage } from 'utils';
+import { toastMessage } from '../../../utils';
 import {
   LineageFlowCustomAccordion,
   LineageFlowCustomAccordionDetails,

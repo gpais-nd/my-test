@@ -38,7 +38,7 @@ import {
 } from 'utils/lineage.utils';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'sideEffects/reducers';
-import { ObjectsMap, useSVGTracker } from 'hooks/useSvgCounter';
+import { ObjectsMap, useSVGTracker } from '../../../hooks/useSvgCounter';
 import { LineageDownloadDirection } from 'containers/Downloads/download.utils';
 
 const REM = 16;

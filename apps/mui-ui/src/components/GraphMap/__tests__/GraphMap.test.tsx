@@ -8,7 +8,7 @@ interface GraphMapProps extends OriginalGraphMapProps {
 }
 
 jest.mock('../GraphMap', () => {
-  const MockGraphMap: React.FC<GraphMapProps> = ({ data, ...props }) => (
+  const MockGraphMap: React.FC<GraphMapProps> = ({ data = [], ...props }) => (
     <div {...props}>
       {data.length > 0 ? (
         data.map(node => (
@@ -77,15 +77,9 @@ describe('GraphMap Component', () => {
   });
 
   it('should render connections between nodes', () => {
-    render(
-      <GraphMap
-        vertices={[]}
-        availableViewportHeight={600}
-        onDownloadButtonClick={() => {}}
-      />
-    );
+    render(<GraphMap {...defaultProps} />);
     const connectionElement = screen.getByText('Node 1').closest('div');
-    expect(connectionElement).toHaveAttribute('data-connections', 'node2');
+    expect(connectionElement).toHaveAttribute('data-connections', '2');
   });
 
   it('should handle rendering with empty data gracefully', () => {

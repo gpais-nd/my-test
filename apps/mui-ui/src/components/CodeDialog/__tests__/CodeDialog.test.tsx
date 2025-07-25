@@ -21,18 +21,17 @@ describe('CodeDialog Component', () => {
     expect(screen.getByText(mockCode)).toBeInTheDocument();
   });
 
-  it.skip('closes the dialog when the close button is clicked', () => {
+  it('closes the dialog when the close button is clicked', () => {
     render(<CodeDialog code={mockCode} label={mockLabel} />);
     const openButton = screen.getByRole('button', {
       name: /code example/i,
     });
     fireEvent.click(openButton); // Open dialog
 
-    // Simulate pressing Escape to close the dialog
-    fireEvent.keyDown(document, { key: 'Escape', code: 'Escape' });
-
-    // Check that the dialog is not visible (instead of not in the DOM)
+    // Simulate pressing Escape to close the dialog (on the dialog element)
     const dialog = screen.getByRole('dialog');
+    fireEvent.keyDown(dialog, { key: 'Escape', code: 'Escape' });
+    // Check that the dialog is not visible (instead of not in the DOM)
     expect(dialog).not.toBeVisible();
   });
 

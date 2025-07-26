@@ -22,6 +22,7 @@ module.exports = {
   setupFilesAfterEnv: ['dotenv/config', '<rootDir>/setupTests'],
   moduleNameMapper: {
     '\\.(css|less|scss|sss|styl)$': 'identity-obj-proxy',
+    '\\.(svg)$': '<rootDir>/src/__mocks__/fileMock.js',
     'config/TableauWidgets.config': '<rootDir>/src/__mocks__/tableauConfigMock.js',
     'config/TableauDataset.config': '<rootDir>/src/__mocks__/tableauConfigMock.js',
     'config/TableauDashboard.config': '<rootDir>/src/__mocks__/tableauConfigMock.js',

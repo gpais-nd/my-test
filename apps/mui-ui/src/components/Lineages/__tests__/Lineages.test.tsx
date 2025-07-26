@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import { rootReducer } from '../../../sideEffects/reducers';
 import { MockedProvider } from '@apollo/client/testing';
-import { mocks } from './lineages.mocks';
+import { mocks } from '../__mocks__/lineages.mocks';
 import { mockResizeObserver } from '../../../tests/utils';
 import Lineages from '../Lineages';
 

@@ -9,7 +9,7 @@ jest.mock('config/TableauDashboard.config', () => ({
 }));
 
 import { render, screen } from '@testing-library/react';
-import { getAssetFromListByAssetId } from '../../__tests__/asset.mock';
+import { getAssetFromListByAssetId } from '../../__mocks__/asset.mock';
 import { AssetRowCustomLayer } from '../AssetRowCustomComponents';
 
 describe('AssetRowValueElement tests', () => {

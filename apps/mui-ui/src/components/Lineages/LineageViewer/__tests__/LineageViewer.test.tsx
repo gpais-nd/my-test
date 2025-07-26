@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import LineageViewer from '../LineageViewer';
 import { MockedProvider } from '@apollo/client/testing';
 import { mockResizeObserver } from '../../../../tests/utils';
-import { mocks } from '../../__tests__/lineages.mocks';
+import { mocks } from '../../__mocks__/lineages.mocks';
 import userEvent from '@testing-library/user-event';
 import { act } from 'react-dom/test-utils';
 import { QueryTypeEnum } from 'utils/lineage.utils';

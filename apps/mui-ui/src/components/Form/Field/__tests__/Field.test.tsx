@@ -23,9 +23,10 @@ describe('Field tests', () => {
     );
 
     const label = screen.getByText('Field Label');
+    const labelDiv = label.parentElement;
     const input = screen.getByRole('textbox', { name: 'field' });
 
-    expect(label).toHaveClass('labelClassName');
+    expect(labelDiv).toHaveClass('labelClassName');
     expect(input).toHaveClass('inputClassName');
   });
 
@@ -43,9 +44,10 @@ describe('Field tests', () => {
     );
 
     const label = screen.getByText('Field Label');
+    const labelDiv = label.parentElement;
     const value = screen.getByText('Field Value');
 
-    expect(label).toHaveClass('labelClassName');
+    expect(labelDiv).toHaveClass('labelClassName');
     expect(value).toHaveClass('valueClassName');
   });
 

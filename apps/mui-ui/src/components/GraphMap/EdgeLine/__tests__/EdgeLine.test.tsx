@@ -37,23 +37,16 @@ describe('EdgeLine tests', () => {
     id: 'origin=>child<=target',
     origin,
     target,
-    relationship: 'child',
   };
 
   it('should render a EdgeLine in the svg', async () => {
     renderComponent(<EdgeLine edge={edge} />);
 
     const edgeLine = screen.getByTestId('origin=>child<=target');
-
     expect(edgeLine).toBeInTheDocument();
-    expect(edgeLine).toHaveAttribute(
-      'd',
-      `
-    M 150 120
-    L 250 200
-  `
-    );
-
+    // Normalize whitespace for robust comparison
+    const d = edgeLine.getAttribute('d')?.replace(/\s+/g, ' ').trim();
+    expect(d).toBe('M 150 120 L 250 200');
     expect(edgeLine).toHaveAttribute('stroke-width', '0.5');
   });
 });

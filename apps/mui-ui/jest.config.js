@@ -2,6 +2,10 @@ const tsconfig = require('./tsconfig.test.json');
 const { pathsToModuleNameMapper } = require('ts-jest');
 
 module.exports = {
+  testMatch: [
+    "**/__tests__/**/*.[jt]s?(x)",
+    "**/?(*.)+(spec|test).[jt]s?(x)"
+  ],
   testEnvironmentOptions: {
     url: 'http://localhost/',
   },

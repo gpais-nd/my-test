@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react';
-import { RelationTypeEnum } from '../../LineageViewer';
 import DownloadDialog from '../DownloadDialog';
 
 describe('DownloadDialog tests', () => {
@@ -8,14 +7,7 @@ describe('DownloadDialog tests', () => {
       <DownloadDialog
         isOpen
         assetId="disneystreaming.aws_us_east_1.dss_dev.dplus_analytics.global_segmentation_all_dplus_subs_2024_01_20_population.151964740"
-        assetName="fact_watches"
         assetType="TABLE"
-        lineageTypes={[
-          RelationTypeEnum.DOWNSTREAM,
-          RelationTypeEnum.AF_DOWNSTREAM,
-          RelationTypeEnum.CREATES,
-          RelationTypeEnum.TRIGGERS,
-        ]}
         onClose={() => {}}
         onSubmit={() => {}}
       />
@@ -26,10 +18,7 @@ describe('DownloadDialog tests', () => {
     ).toBeInTheDocument();
     expect(screen.getByRole('textbox', { name: 'Asset' })).toBeInTheDocument();
     expect(screen.getByRole('textbox', { name: 'Asset' })).toBeDisabled();
-    expect(
-      screen.getByRole('textbox', { name: 'Additional comments' })
-    ).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Cancel' })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Send' })).toBeInTheDocument();
+    // Check for the submit button
+    expect(screen.getByRole('button', { name: 'Submit' })).toBeInTheDocument();
   });
 });

@@ -14,6 +14,7 @@ describe('DataSource tests', () => {
       id: '12345',
       name: 'DeltaLake',
       numberOfTables: 432,
+      isEnabled: true,
     };
 
     renderComponent(<DataSourceCard dataSource={dataSource} />);

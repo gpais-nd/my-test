@@ -1,4 +1,4 @@
-import { RenderResult, render, screen } from '@testing-library/react';
+import { RenderResult, render, screen, within, waitFor } from '@testing-library/react';
 import { GridPaginatorResults } from '../index';
 import userEvent from '@testing-library/user-event';
 import { act } from 'react-dom/test-utils';
@@ -50,39 +50,30 @@ describe('GridPaginatorResults tests', () => {
 
   it('should select an option for rows per page and trigger the function', async () => {
     const setRowsPerPage = jest.fn();
-
     renderComponent({ setRowsPerPage });
-
-    const rowsPerPageSelector = await screen.findByTestId(
-      'dropdownRowsPerPage'
-    );
-
+    // Open the dropdown by clicking the combobox
+    const comboBox = screen.getByRole('combobox');
     await act(async () => {
-      userEvent.click(rowsPerPageSelector);
+      await userEvent.click(comboBox);
     });
-    const optionToSelect = await screen.findByTestId('dropdownRowsPerPage30');
-
+    // Find the option by its text in the document body
+    const optionToSelect = await waitFor(() => within(document.body).getByText('30'));
     await act(async () => {
       await userEvent.click(optionToSelect);
     });
-
     expect(setRowsPerPage).toHaveBeenCalledTimes(1);
   });
 
   it('should select a custom option for rows per page and trigger the function', async () => {
     const setRowsPerPage = jest.fn();
-
     renderComponent({ setRowsPerPage, rowsPerPageOptions: [12, 24, 36] });
-
-    const rowsPerPageSelector = await screen.findByTestId(
-      'dropdownRowsPerPage'
-    );
-
+    // Open the dropdown by clicking the combobox
+    const comboBox = screen.getByRole('combobox');
     await act(async () => {
-      userEvent.click(rowsPerPageSelector);
+      await userEvent.click(comboBox);
     });
-    const optionToSelect = await screen.findByTestId('dropdownRowsPerPage24');
-
+    // Find the option by its text in the document body
+    const optionToSelect = await waitFor(() => within(document.body).getByText('24'));
     await act(async () => {
       await userEvent.click(optionToSelect);
     });

@@ -47,6 +47,7 @@ const GridPaginatorResults: FC<GridPaginatorResultsProps> = ({
             }
           }}
           className={styles.rowsPerPage}
+          data-testid="dropdownRowsPerPage"
         >
           {rowsPerPageOptionsDropdown.map(rowsPerPageOption => (
             <MenuItem
